@@ -1,6 +1,7 @@
-var aws = require ('aws-lib')
-  , sqsConnect = require('./lib/sqsConnect')
+var sqsConnect = require('./lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
 
+
+console.log('mailReader app running...');
 
 sqsConnect.pollMailReaderQueue( mailReader.readMail );
