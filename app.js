@@ -1,4 +1,4 @@
-var sqsConnect = require('./lib/sqsConnect')
+var sqsConnect = require('../serverCommon/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
 
 
