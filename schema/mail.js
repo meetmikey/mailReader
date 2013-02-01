@@ -13,6 +13,7 @@ var EmailUser = {
 
 var Mail = new Schema({
     userId: {type: Schema.ObjectId, index: true, required: true}
+  , messageId: {type: String, index: true}
   , sender: EmailUser
   , recipients: {type: [EmailUserSchema]}
   , subject: {type: String}
