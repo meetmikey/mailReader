@@ -3,9 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "mailparser": ">=0.2.31",
-    "mongoose": "3.x",
-    "async": ">=0.1.22"
+      "mailparser": ">=0.2.31"
+    , "async": ">=0.1.22"
   },
   "scripts": {
     "start": "app.js"

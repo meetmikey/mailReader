@@ -1,4 +1,4 @@
-var sqsConnect = require('../../serverCommon/lib/sqsConnect')
+var sqsConnect = require(serverCommon + '/lib/sqsConnect')
 
 console.log('addEmail app running...');
 
