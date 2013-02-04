@@ -6,4 +6,15 @@ var sqsConnect = require('../serverCommon/lib/sqsConnect')
 
 console.log('mailReader app running...');
 
-sqsConnect.pollMailReaderQueue( mailReader.readMail );
+sqsConnect.pollMailReaderQueue(
+  function(messageString, callback) {
+    mailReader.readMail( messageString, function(err) {
+      if (err) {
+        winston.handleError(err);
+        callback(err);
+      } else {
+        callback();
+      }
+    })
+  }
+);
