@@ -5,6 +5,8 @@
   "dependencies": {
       "mailparser": ">=0.2.31"
     , "async": ">=0.1.22"
+    , "fs": ">=0.0.0"
+    , "url": "0.7.9"
   },
   "scripts": {
     "start": "app.js"
