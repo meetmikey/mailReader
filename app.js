@@ -1,8 +1,9 @@
 var serverCommon = process.env.SERVER_COMMON;
 
-var sqsConnect = require('../serverCommon/lib/sqsConnect')
+var mongoose = require(serverCommon + '/lib/mongooseConnect')
+  , sqsConnect = require('../serverCommon/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
-
+  , winston = require (serverCommon + '/lib/winstonWrapper').winston
 
 console.log('mailReader app running...');
 
