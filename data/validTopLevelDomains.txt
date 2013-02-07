@@ -1,3 +1,8 @@
+COM
+CO
+INFO
+ORG
+NET
 AC
 AD
 AE
@@ -51,8 +56,6 @@ CK
 CL
 CM
 CN
-CO
-COM
 COOP
 CR
 CU
@@ -112,7 +115,6 @@ IE
 IL
 IM
 IN
-INFO
 INT
 IO
 IQ
@@ -175,7 +177,6 @@ NA
 NAME
 NC
 NE
-NET
 NF
 NG
 NI
@@ -186,7 +187,6 @@ NR
 NU
 NZ
 OM
-ORG
 PA
 PE
 PF
