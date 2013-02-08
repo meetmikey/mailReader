@@ -13,6 +13,7 @@ mailParser.on('end', function(mail) {
 });
 
 var outputPath = '/home/jdurack/Desktop/attachmentOutput.docx';
+var userId = 'TEST_USER';
 
 var s3Path = '/rawEmail/BAD_MAIL.txt';
 s3Utils.client.getFile(s3Path, function(err, res) {
@@ -61,7 +62,7 @@ checkAttachment = function(mailAttachment, callback) {
     "x-amz-server-side-encryption" : "AES256",
     "Content-Disposition" : 'attachment; filename=' + mailAttachment.fileName
   }
-  var s3Path = mailUtils.getAttachmentS3Path('BAD_ATTACHMENT');
+  var s3Path = s3Utils.getAttachmentS3Path('BAD_ATTACHMENT', userId);
   s3Utils.client.putBuffer(mailAttachment.content, s3Path, headers,
     function(err, res) {
       if ( err ) {
