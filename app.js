@@ -7,6 +7,11 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
 
 console.log('mailReader app running...');
 
+var MAX_HANDLERS = 1;
+if ( process && process.argv && ( process.argv.length > 2 ) ) {
+  MAX_HANDLERS = process.argv[2];
+}
+
 sqsConnect.pollMailReaderQueue(
   function(messageString, callback) {
     mailReader.readMail( messageString, function(err) {
@@ -17,5 +22,5 @@ sqsConnect.pollMailReaderQueue(
         callback();
       }
     })
-  }
+  }, MAX_HANDLERS
 );
