@@ -6,12 +6,12 @@ var winston = require (serverCommon + '/lib/winstonWrapper').winston
 
 LinkModel.find({}, function(err, foundLinks) {
   if ( err ) {
-    winston.error('error getting links: ' + err);
+    winston.doMongoError(err);
   } else {
     linkHandler.checkAndPromoteLinks(foundLinks, null, true,
       function(err) {
         if ( err ) {
-          winston.error('checkAndPromoteLinks err: ' + err);
+          winston.handleError( err );
         } else {
           winston.info('done!');
         }

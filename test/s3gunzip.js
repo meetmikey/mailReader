@@ -7,7 +7,7 @@ var s3Utils = require(serverCommon + '/lib/s3Utils')
 var s3Path = '/attachments/GZIP_TEST';
 var filePath = '/tmp/gunzipTest.png';
 
-s3Utils.getFile( s3Path, function(err, res) {
+s3Utils.getFile( s3Path, true, function(err, res) {
 
   if ( err ) {
     winston.doError( err );

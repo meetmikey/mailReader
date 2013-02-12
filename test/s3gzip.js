@@ -25,7 +25,7 @@ fs.readFile(filePath, function(err, data) {
       //, "Content-Disposition" : 'attachment; filename=' + filename
     }
 
-    s3Utils.putBuffer(data, s3Path, headers, function(err, res) {
+    s3Utils.putBuffer(data, s3Path, headers, true, function(err, res) {
       if ( err ) {
         winston.handleError(err);
       } else {

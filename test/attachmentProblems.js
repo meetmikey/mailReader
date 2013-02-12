@@ -6,6 +6,7 @@ var MailParser = require('mailparser').MailParser
   , async = require('async')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
   , s3Utils = require(serverCommon + '/lib/s3Utils')
+  , AttachmentModel = require(serverCommon + '/schema/attachment').AttachmentModel
 
 var mailParser = new MailParser();
 mailParser.on('end', function(mail) {
@@ -16,7 +17,7 @@ var outputPath = '/home/jdurack/Desktop/attachmentOutput.docx';
 var userId = 'TEST_USER';
 
 var s3Path = '/rawEmail/BAD_MAIL.txt';
-s3Utils.getFile(s3Path, function(err, res) {
+s3Utils.getFile(s3Path, true, function(err, res) {
   if ( err ) {
     winston.doS3Error(err);
 
@@ -66,8 +67,11 @@ checkAttachment = function(mailAttachment, callback) {
     "x-amz-server-side-encryption" : "AES256",
     "Content-Disposition" : 'attachment; filename=' + mailAttachment.fileName
   }
-  var s3Path = s3Utils.getAttachmentS3Path('BAD_ATTACHMENT', userId);
-  s3Utils.putBuffer(mailAttachment.content, s3Path, headers,
+
+  var dummyAttachment = new AttachmentModel({});
+
+  var s3Path = s3Utils.getAttachmentS3Path(dummyAttachment);
+  s3Utils.putBuffer(mailAttachment.content, s3Path, headers, true,
     function(err, res) {
       if ( err ) {
         callback( err );
