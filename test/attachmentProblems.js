@@ -16,9 +16,13 @@ var outputPath = '/home/jdurack/Desktop/attachmentOutput.docx';
 var userId = 'TEST_USER';
 
 var s3Path = '/rawEmail/BAD_MAIL.txt';
-s3Utils.client.getFile(s3Path, function(err, res) {
+s3Utils.getFile(s3Path, function(err, res) {
   if ( err ) {
     winston.doS3Error(err);
+
+  } else if ( ! res ) {
+    callback( winston.makeMissingParamError('res') );
+
   } else {
     res.on('data', function(data) {
       mailParser.write(data);
@@ -63,10 +67,10 @@ checkAttachment = function(mailAttachment, callback) {
     "Content-Disposition" : 'attachment; filename=' + mailAttachment.fileName
   }
   var s3Path = s3Utils.getAttachmentS3Path('BAD_ATTACHMENT', userId);
-  s3Utils.client.putBuffer(mailAttachment.content, s3Path, headers,
+  s3Utils.putBuffer(mailAttachment.content, s3Path, headers,
     function(err, res) {
       if ( err ) {
-        callback( winston.makeS3Error(err) );
+        callback( err );
       } else {
         callback();
       }
