@@ -14,7 +14,7 @@ if ( process && process.argv && ( process.argv.length > 2 ) ) {
 
 sqsConnect.pollMailReaderQueue(
   function(messageString, callback) {
-    mailReader.readMail( messageString, function(err) {
+    mailReader.handleMailMessage( messageString, function(err) {
       if (err) {
         winston.handleError(err);
         callback(err);
