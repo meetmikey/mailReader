@@ -1,13 +1,13 @@
 var serverCommon = process.env.SERVER_COMMON;
 
 var mongoose = require(serverCommon + '/lib/mongooseConnect')
-  , attachmentHandler = require('../lib/attachmentHandler')
+  , linkHandler = require('../lib/linkHandler')
   , mailReader = require('../lib/mailReader')
   , MailParser = require('mailparser').MailParser
   , fs = require('fs')
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , MailModel = require(serverCommon + '/schema/mail').MailModel
-  , AttachmentModel = require(serverCommon + '/schema/attachment').AttachmentModel
+  , LinkModel = require(serverCommon + '/schema/link').LinkModel
   , async = require('async')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
   , crypto = require('crypto')
@@ -24,12 +24,12 @@ var gmThreadId = '1425175090881070972';
 var uid = 1;
 var mailParserDoneCallback;
 
-var threadAttachment = this;
+var threadLink = this;
 
 
 exports.handleParsedMail = function( parsedMail, callback ) {
 
-  threadAttachment.createMail( parsedMail, function(err, mail) {
+  threadLink.createMail( parsedMail, function(err, mail) {
     if ( err ) {
       callback(err);
 
@@ -38,7 +38,7 @@ exports.handleParsedMail = function( parsedMail, callback ) {
 
     } else {
       mailIds.push(mail._id);
-      attachmentHandler.handleAttachments( parsedMail, mail, callback );
+      linkHandler.extractLinks( parsedMail, mail, callback );
     }
   });
 }
@@ -97,7 +97,7 @@ exports.run = function() {
         var mailParser = new MailParser();
 
         mailParser.on('end', function( parsedMail ) {
-          threadAttachment.handleParsedMail( parsedMail, function(err) {
+          threadLink.handleParsedMail( parsedMail, function(err) {
             if ( err ) {
               winston.handleError(err);
             }
@@ -114,13 +114,13 @@ exports.run = function() {
     if ( err ) {
       winston.handleError(err);
     }
-    threadAttachment.cleanup();
+    threadLink.cleanup();
   });
 }
 
 exports.cleanup = function() {
   async.forEach( mailIds, function(mailId, forEachCallback) {
-    AttachmentModel.find({mailId:mailId}).remove();
+    LinkModel.find({mailId:mailId}).remove();
     MailModel.find({_id:mailId}).remove();
     forEachCallback();
   }, function(err) {
@@ -133,4 +133,4 @@ exports.cleanup = function() {
   });
 }
 
-threadAttachment.run();
+threadLink.run();
