@@ -15,6 +15,7 @@ var urlFilterText = [
   , 'evite.com'
   , 'www.w3.org'
   , 'mailchimp.com'
+  , 'marketing.typesafe.com'
 ];
 
 define('URL_FILTER_TEXT', urlFilterText);
