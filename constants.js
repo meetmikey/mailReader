@@ -9,6 +9,7 @@ function define(name, value) {
 var urlFilterText = [
     'track'
   , 'unsub'
+  , 'activate'
   , 'sendgrid.me'
   , 'api.mixpanel.com'
   , 'eventbrite.com'
