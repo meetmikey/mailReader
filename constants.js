@@ -17,7 +17,7 @@ var urlFilterText = [
   , 'www.w3.org'
   , 'mailchimp.com'
   , 'marketing.typesafe.com'
-  , 'google.com/calendar/'
+  , 'google.com/calendar'
   , 'magicnotebook.com'
   , 'meetmikey.com'
 ];
