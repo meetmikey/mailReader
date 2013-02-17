@@ -17,11 +17,12 @@ var urlFilterText = [
   , 'www.w3.org'
   , 'mailchimp.com'
   , 'marketing.typesafe.com'
-  , 'local.meetmikey.com'
-  , 'dev.meetmikey.com'
   , 'google.com/calendar/'
   , 'schemas.microsoft.com'
   , 'schema.org'
+  , 'magicnotebook.com'
+  , 'local.meetmikey.com'
+  , 'dev.meetmikey.com'
 ];
 
 define('URL_FILTER_TEXT', urlFilterText);
