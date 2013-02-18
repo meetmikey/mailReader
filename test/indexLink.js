@@ -8,6 +8,7 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , MailModel = require(serverCommon + '/schema/mail').MailModel
   , LinkModel = require(serverCommon + '/schema/link').LinkModel
+  , SentAndCoReceiveMRModel = require(serverCommon +'/schema/contact').SentAndCoReceiveMRModel
   , async = require('async')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
   , crypto = require('crypto')
@@ -24,6 +25,7 @@ var gmThreadId = '1425175090881070972';
 var gmMsgId = '12345';
 var uid = 1;
 var mailParserDoneCallback;
+var fromEmail = 'obama@dev.meetmikey.com'
 
 var threadLink = this;
 
@@ -88,41 +90,65 @@ exports.run = function() {
 
   winston.info('running...');
 
-  async.forEachSeries( emailFiles, function(emailFile, forEachSeriesCallback) {
-    fs.readFile( emailFile, function(err, res) {
-      if ( err ) {
-        forEachSeriesCallback( winston.makeError('error reading file') );
-        
-      } else if ( ! res ) {
-        forEachSeriesCallback( winston.makeMissingParamError('res') );
-
-      } else {
-
-        var mailParser = new MailParser();
-
-        mailParser.on('end', function( parsedMail ) {
-          threadLink.handleParsedMail( parsedMail, function(err) {
-            if ( err ) {
-              winston.handleError(err);
-            }
-            mailParserDoneCallback();
-          });
-        });
-
-        mailParser.write(res);
-        mailParser.end();
-        mailParserDoneCallback = forEachSeriesCallback;
-      }
-    });
-  }, function(err) {
-    if ( err ) {
-      winston.handleError(err);
+  // add contact info to database so that we process links
+  var contact = new SentAndCoReceiveMRModel({
+    _id : {
+      email : fromEmail,
+      userId : userId
+    },
+    value : {
+      sent : 1,
+      corecipient : 1
     }
-    threadLink.cleanup();
-  });
+  })
+
+  contact.save (function (err) {
+
+    if (err) {
+      winston.doError ('could not create contact', {err: err})
+      threadLink.cleanup() 
+    }
+    else {
+
+      async.forEachSeries( emailFiles, function(emailFile, forEachSeriesCallback) {
+        fs.readFile( emailFile, function(err, res) {
+          if ( err ) {
+            forEachSeriesCallback( winston.makeError('error reading file') );
+            
+          } else if ( ! res ) {
+            forEachSeriesCallback( winston.makeMissingParamError('res') );
+
+          } else {
+
+            var mailParser = new MailParser();
+
+            mailParser.on('end', function( parsedMail ) {
+              threadLink.handleParsedMail( parsedMail, function(err) {
+                if ( err ) {
+                  winston.handleError(err);
+                }
+                mailParserDoneCallback();
+              });
+            });
+
+            mailParser.write(res);
+            mailParser.end();
+            mailParserDoneCallback = forEachSeriesCallback;
+          }
+        });
+      }, function(err) {
+        if ( err ) {
+          winston.handleError(err);
+        }
+        threadLink.cleanup();
+      });
+
+    }
+  })
 }
 
 exports.cleanup = function() {
+  winston.info ('cleaning up')
   async.forEach( mailIds, function(mailId, forEachCallback) {
     LinkModel.find({mailId:mailId}).remove();
     MailModel.find({_id:mailId}).remove();
@@ -131,10 +157,15 @@ exports.cleanup = function() {
     if ( err ) {
       winston.handleError(err);
     } else {
-      mongoose.disconnect();
       winston.info('cleanup done!');
     }
   });
+
+  SentAndCoReceiveMRModel.find ({'_id.userId' : userId}).remove();
+  /*SentAndCoReceiveMRModel.collection.findOne ({'_id.userId' : userId, '_id.email' : fromEmail}, function (err, foundContact) {
+    winston.info ('here')
+    console.log (foundContact)
+  })*/
 }
 
 threadLink.run();
