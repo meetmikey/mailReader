@@ -25,12 +25,12 @@ var gmMsgId = '12345'
 var uid = 1;
 var mailParserDoneCallback;
 
-var threadAttachment = this;
+var indexAttachment = this;
 
 
 exports.handleParsedMail = function( parsedMail, callback ) {
 
-  threadAttachment.createMail( parsedMail, function(err, mail) {
+  indexAttachment.createMail( parsedMail, function(err, mail) {
     if ( err ) {
       callback(err);
 
@@ -63,6 +63,7 @@ exports.createMail = function( parsedMail, callback ) {
     , bodyHTML: mailUtils.getBodyHTML( parsedMail )
     , numAttachments: numAttachments
     , sentDate: mailUtils.getSentDate( parsedMail )
+    , gmDate: mailUtils.getSentDate (parsedMail)
     , mailReaderState: 'started'
     , gmThreadId: gmThreadId
     , gmMsgId : gmMsgId
@@ -73,10 +74,12 @@ exports.createMail = function( parsedMail, callback ) {
   });
 
   uid++;
+  gmMsgId++;
 
   mail.save( function(err) {
     if ( err ) {
       callback( winston.makeMongoError( err ) );
+      indexAttachment.cleanup();
     } else {
       callback(null, mail);
     }
@@ -100,7 +103,7 @@ exports.run = function() {
         var mailParser = new MailParser();
 
         mailParser.on('end', function( parsedMail ) {
-          threadAttachment.handleParsedMail( parsedMail, function(err) {
+          indexAttachment.handleParsedMail( parsedMail, function(err) {
             if ( err ) {
               winston.handleError(err);
             }
@@ -117,7 +120,7 @@ exports.run = function() {
     if ( err ) {
       winston.handleError(err);
     }
-    threadAttachment.cleanup();
+    indexAttachment.cleanup();
   });
 }
 
@@ -136,4 +139,4 @@ exports.cleanup = function() {
   });
 }
 
-threadAttachment.run();
+indexAttachment.run();
