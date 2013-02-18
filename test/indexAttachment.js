@@ -141,8 +141,7 @@ exports.checkAssertions = function (callback) {
     callback()
   })
 
-  // the indexed data should match the attachments
-
+  // TODO: the indexed data should match the attachments
 }
 
 exports.cleanup = function() {
