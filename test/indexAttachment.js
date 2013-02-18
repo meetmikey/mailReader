@@ -11,6 +11,7 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , async = require('async')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
   , crypto = require('crypto')
+  , assert = require ('assert')
 
 var emailFiles = [
    './test/data/thread/2744-body.txt'
@@ -120,8 +121,28 @@ exports.run = function() {
     if ( err ) {
       winston.handleError(err);
     }
-    indexAttachment.cleanup();
+
+    indexAttachment.checkAssertions (function (err) {
+      if (err) {
+        winston.handleError(err)
+      }
+
+      indexAttachment.cleanup();
+    })
+
   });
+}
+
+
+exports.checkAssertions = function (callback) {
+  // there should be 4 indexed attachments in the database
+  AttachmentModel.find ({isIndexed: true}, function (err, attachments) {
+    assert.equal(attachments.length, 4)
+    callback()
+  })
+
+  // the indexed data should match the attachments
+
 }
 
 exports.cleanup = function() {
