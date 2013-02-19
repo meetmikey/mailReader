@@ -1,11 +1,11 @@
 var serverCommon = process.env.SERVER_COMMON;
 
 var mongoose = require(serverCommon + '/lib/mongooseConnect')
-  , sqsConnect = require('../serverCommon/lib/sqsConnect')
+  , sqsConnect = require(serverCommon + '/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
   , winston = require (serverCommon + '/lib/winstonWrapper').winston
 
-console.log('mailReader app running...');
+winston.doInfo('mailReader app running...');
 
 var MAX_HANDLERS = 1;
 if ( process && process.argv && ( process.argv.length > 2 ) ) {
