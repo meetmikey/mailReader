@@ -20,7 +20,7 @@ var emailFiles = [
 ];
 
 var mailIds = [];
-var userId = '51105236d50c88ebe8ef30cc';
+var userId = '5122d764a0f780d166000004';
 var gmThreadId = '1425175090881070972';
 var gmMsgId = '12345'
 var uid = 1;

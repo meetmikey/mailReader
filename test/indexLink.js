@@ -148,6 +148,7 @@ exports.run = function() {
 }
 
 exports.cleanup = function() {
+  return;
   winston.info ('cleaning up')
   async.forEach( mailIds, function(mailId, forEachCallback) {
     LinkModel.find({mailId:mailId}).remove();
@@ -162,10 +163,6 @@ exports.cleanup = function() {
   });
 
   SentAndCoReceiveMRModel.find ({'_id.userId' : userId}).remove();
-  /*SentAndCoReceiveMRModel.collection.findOne ({'_id.userId' : userId, '_id.email' : fromEmail}, function (err, foundContact) {
-    winston.info ('here')
-    console.log (foundContact)
-  })*/
 }
 
 threadLink.run();
