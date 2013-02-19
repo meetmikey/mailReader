@@ -7,6 +7,8 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
 
 console.log('mailReader app running...');
 
+winston.logToFiles('mailReader');
+
 var MAX_HANDLERS = 1;
 if ( process && process.argv && ( process.argv.length > 2 ) ) {
   MAX_HANDLERS = process.argv[2];
