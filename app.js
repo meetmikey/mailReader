@@ -5,8 +5,6 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , mailReader = require('./lib/mailReader')
   , winston = require (serverCommon + '/lib/winstonWrapper').winston
 
-winston.logToFiles('mailReader');
-
 winston.doInfo('mailReader app running...');
 
 var MAX_HANDLERS = 1;
