@@ -21,8 +21,7 @@ var urlFilterText = [
   , 'schemas.microsoft.com'
   , 'schema.org'
   , 'magicnotebook.com'
-  , 'local.meetmikey.com'
-  , 'dev.meetmikey.com'
+  , 'meetmikey.com'
 ];
 
 define('URL_FILTER_TEXT', urlFilterText);
