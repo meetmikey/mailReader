@@ -2,3 +2,4 @@ node_modules/async
 node_modules/crypto
 node_modules/mailparser
 node_modules/request
+node_modules/cheerio
