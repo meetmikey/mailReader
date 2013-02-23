@@ -1,0 +1,52 @@
+                                                                                                                                                                                                                                                               
+MIME-Version: 1.0
+Received: by 10.60.97.166 with HTTP; Thu, 21 Feb 2013 22:15:46 -0800 (PST)
+X-Originating-IP: [64.236.139.254]
+Date: Thu, 21 Feb 2013 22:15:46 -0800
+Delivered-To: justin@magicnotebook.com
+Message-ID: <CAPft=oQfGX=3g9+kUj29cLb7sgfgXZN00zQwwFr7uV-YUsdcOw@mail.gmail.com>
+Subject: doc links test mail
+From: Justin Durack <justin@magicnotebook.com>
+To: Justin Durack <justin@magicnotebook.com>
+Content-Type: multipart/alternative; boundary=bcaec550a9883c4f8004d64a1fdf
+
+--bcaec550a9883c4f8004d64a1fdf
+Content-Type: text/plain; charset=ISO-8859-1
+
+Here's a doc link:
+
+https://docs.google.com/a/magicnotebook.com/document/d/1cy_NcnBcCPTfiNIKy6ziSSnMpLyf5N7FKySteIx_C-w/edit?usp=sharing
+
+
+And here's a preso link:
+
+https://docs.google.com/a/magicnotebook.com/presentation/d/154p9mRDtOu1Ybd636julwQnYJfuKQFcW2tq9_WZ2j2I/edit?usp=sharing
+
+spreadsheet link:
+https://docs.google.com/a/magicnotebook.com/spreadsheet/ccc?key=0ApNID4-ZqEs1dHA4QW90VnJ5LXdEcWFSV3lmSnJiQnc&usp=sharing
+
+that's all!
+
+--bcaec550a9883c4f8004d64a1fdf
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div style>Here&#39;s a doc link:</div><div><br></div><a h=
+ref=3D"https://docs.google.com/a/magicnotebook.com/document/d/1cy_NcnBcCPTf=
+iNIKy6ziSSnMpLyf5N7FKySteIx_C-w/edit?usp=3Dsharing">https://docs.google.com=
+/a/magicnotebook.com/document/d/1cy_NcnBcCPTfiNIKy6ziSSnMpLyf5N7FKySteIx_C-=
+w/edit?usp=3Dsharing</a><div>
+<br></div><div><br></div><div>And here&#39;s a preso link:</div><div><br></=
+div><div><a href=3D"https://docs.google.com/a/magicnotebook.com/presentatio=
+n/d/154p9mRDtOu1Ybd636julwQnYJfuKQFcW2tq9_WZ2j2I/edit?usp=3Dsharing">https:=
+//docs.google.com/a/magicnotebook.com/presentation/d/154p9mRDtOu1Ybd636julw=
+QnYJfuKQFcW2tq9_WZ2j2I/edit?usp=3Dsharing</a></div>
+<div><br></div><div style>spreadsheet link:</div><div style><a href=3D"http=
+s://docs.google.com/a/magicnotebook.com/spreadsheet/ccc?key=3D0ApNID4-ZqEs1=
+dHA4QW90VnJ5LXdEcWFSV3lmSnJiQnc&amp;usp=3Dsharing">https://docs.google.com/=
+a/magicnotebook.com/spreadsheet/ccc?key=3D0ApNID4-ZqEs1dHA4QW90VnJ5LXdEcWFS=
+V3lmSnJiQnc&amp;usp=3Dsharing</a><br>
+</div><div><br></div><div>that&#39;s all!<br><div><br></div><div><br></div>=
+</div></div>
+
+--bcaec550a9883c4f8004d64a1fdf--
