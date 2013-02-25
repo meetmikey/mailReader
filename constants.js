@@ -22,6 +22,7 @@ var urlFilterText = [
   , 'schema.org'
   , 'magicnotebook.com'
   , 'meetmikey.com'
+  , 'email.launchrock.com'
 ];
 
 define('URL_FILTER_TEXT', urlFilterText);

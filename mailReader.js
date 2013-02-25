@@ -24,3 +24,17 @@ sqsConnect.pollMailReaderQueue(
     })
   }, MAX_HANDLERS
 );
+
+
+sqsConnect.pollMailReaderQuickQueue(
+  function(messageString, callback) {
+    mailReader.handleMailMessage( messageString, function(err) {
+      if (err) {
+        winston.handleError(err);
+        callback(err);
+      } else {
+        callback();
+      }
+    })
+  }, MAX_HANDLERS
+);

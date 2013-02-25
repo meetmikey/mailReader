@@ -20,7 +20,7 @@ var emailFiles = [
 ];
 
 var mailIds = [];
-var userId = '51105236d50c88ebe8ef30cc';
+var userId = '5124599fd22d320052000004';
 var gmThreadId = '1425175090881070972';
 var gmMsgId = '12345';
 var uid = 1;
@@ -106,7 +106,7 @@ exports.run = function() {
 
     if (err) {
       winston.doError ('could not create contact', {err: err})
-      threadLink.cleanup() 
+      //threadLink.cleanup() 
     }
     else {
 
@@ -140,7 +140,7 @@ exports.run = function() {
         if ( err ) {
           winston.handleError(err);
         }
-        threadLink.cleanup();
+        //threadLink.cleanup();
       });
 
     }
