@@ -1,0 +1,216 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: sagar@magicnotebook.com
+Received: by 10.68.4.7 with SMTP id g7csp796041pbg;
+        Fri, 4 Jan 2013 10:53:01 -0800 (PST)
+X-Received: by 10.224.59.135 with SMTP id l7mr31865424qah.25.1357325581459;
+        Fri, 04 Jan 2013 10:53:01 -0800 (PST)
+Return-Path: <3DCXnUAoLBX8ure.edohqdjd22dqj.frpvdjdupdjlfqrwherrn.frp@calendar-server.bounces.google.com>
+Received: from mail-qa0-f73.google.com (mail-qa0-f73.google.com [209.85.216.73])
+        by mx.google.com with ESMTPS id dt4si31327097qab.60.2013.01.04.10.53.01
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 04 Jan 2013 10:53:01 -0800 (PST)
+Received-SPF: pass (google.com: domain of 3DCXnUAoLBX8ure.edohqdjd22dqj.frpvdjdupdjlfqrwherrn.frp@calendar-server.bounces.google.com designates 209.85.216.73 as permitted sender) client-ip=209.85.216.73;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of 3DCXnUAoLBX8ure.edohqdjd22dqj.frpvdjdupdjlfqrwherrn.frp@calendar-server.bounces.google.com designates 209.85.216.73 as permitted sender) smtp.mail=3DCXnUAoLBX8ure.edohqdjd22dqj.frpvdjdupdjlfqrwherrn.frp@calendar-server.bounces.google.com; dkim=pass header.i=@google.com
+Received: by mail-qa0-f73.google.com with SMTP id a19so20393qad.4
+        for <sagar@magicnotebook.com>; Fri, 04 Jan 2013 10:53:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:reply-to:sender:auto-submitted:message-id:date:subject
+         :from:to:content-type;
+        bh=Y6qNX6fMO0pTqMQ0FYFQDcJRZZ8tbEk17KhE3KVi3/s=;
+        b=AlDJLPYaY7rt2EkpRwF0w34oqjUYQUUFGVxlviPhtzTThoOWs2c5UkdPzLAcHYYjpJ
+         0GJJYbqMy/fZKzfFyQF93wuDXMqskE0PtXDKN1REYQuc9Oje1UiBlJAWeXene4+YGWwN
+         S9ZvD83NLThwIWFsWo3s3m0n/Olnuu2luRCsMUPo116ejoMknjN5y7xGPCx6PJgG3wcP
+         FdUP39IZG7hZInMsFzKlEro5czm6zaDN64u1SzaYl4unAouUaG08ZKkzGZL9YnqINq31
+         xD+4Incw+UeT2LkdlXERwAa4K2XeGpMXqVcIY6btjsLct5hMTnhYBwhTOc4H3r+Yo8be
+         mEGw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=mime-version:reply-to:sender:auto-submitted:message-id:date:subject
+         :from:to:content-type:x-gm-message-state;
+        bh=Y6qNX6fMO0pTqMQ0FYFQDcJRZZ8tbEk17KhE3KVi3/s=;
+        b=NSH+FqO5DPcryu0EPowg3ziXc20y2f0igscoUX/jqx1JEkqm6meKQq6JLLvByYu+WD
+         V/N431Nw47ITG9tGQQSfZZmf6OSt3mx5yf4wx3BQE4OV4LhQDLl7xXNsfUFbWuH3uLNC
+         kcEoMEArnbJ2YhdoRdesKQTil46LV5CQDHe92fT54T0OEQPHbYM0RMThVCekzJ63ZFgF
+         XiNUqa7AQgzBgtbCxTHwwadtotiUxBhzaVnWXW8VY3SB/ZbOUo9AV8fGHwYkpktjbqdv
+         B8ixbHEeZFCRuGLiWgkLFJRnCwMx3AbNf1XNo8SVAlLrCBVMoN4GMadcm2ZO/6ryeJoa
+         D7aw==
+MIME-Version: 1.0
+Received: by 10.52.71.109 with SMTP id t13mr16459923vdu.2.1357325580726; Fri,
+ 04 Jan 2013 10:53:00 -0800 (PST)
+Reply-To: Rob Balena <rob.balena@gazzang.com>
+Sender: Google Calendar <calendar-notification@google.com>
+Auto-Submitted: auto-generated
+Message-ID: <20cf307f376c15733804d27afd12@google.com>
+Date: Fri, 04 Jan 2013 18:53:00 +0000
+Subject: Invitation: Gazzang Product Discussion with Sagar Mehta @ Wed Jan 9
+ 10:05am - 10:35am (sagar@magicnotebook.com)
+From: Rob Balena <rob.balena@gazzang.com>
+To: "sagar@magicnotebook.com" <sagar@magicnotebook.com>
+Content-Type: multipart/mixed; boundary=20cf307f376c15732904d27afd11
+X-Gm-Message-State: ALoCoQmdDENiXJhDlSfvyUH9lhIrtcAurtxChk+4FDkZXZtTCI0spa3d1AaSDSYv+CBIMyw26Zo7
+
+--20cf307f376c15732904d27afd11
+Content-Type: multipart/alternative; boundary=20cf307f376c15732504d27afd0f
+
+--20cf307f376c15732504d27afd0f
+Content-Type: text/plain; charset=windows-1252; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+WW91IGhhdmUgYmVlbiBpbnZpdGVkIHRvIHRoZSBmb2xsb3dpbmcgZXZlbnQuDQoNClRpdGxlOiBH
+YXp6YW5nIFByb2R1Y3QgRGlzY3Vzc2lvbiB3aXRoIFNhZ2FyIE1laHRhDQpXaGVuOiBXZWQgSmFu
+IDkgMTA6MDVhbSCWIDEwOjM1YW0gUGFjaWZpYyBUaW1lDQpXaGVyZTogUm9iIHdpbGwgY2FsbCBT
+YWdhciBhdCAoNTE2KSAzMTItMjI0Ng0KQ2FsZW5kYXI6IHNhZ2FyQG1hZ2ljbm90ZWJvb2suY29t
+DQpXaG86DQogICAgICogcm9iLmJhbGVuYUBnYXp6YW5nLmNvbSAtIG9yZ2FuaXplcg0KICAgICAq
+IFNhZ2FyIE1laHRhDQoNCkV2ZW50IGRldGFpbHM6ICANCmh0dHBzOi8vd3d3Lmdvb2dsZS5jb20v
+Y2FsZW5kYXIvZXZlbnQ/YWN0aW9uPVZJRVcmZWlkPU5tMWthSFl5ZFdoemJHTTFaMkYwTm14eGJH
+dzRaemQwT1RBZ2MyRm5ZWEpBYldGbmFXTnViM1JsWW05dmF5NWpiMjAmdG9rPU1qSWpjbTlpTG1K
+aGJHVnVZVUJuWVhwNllXNW5MbU52YlRJMVpqa3daak0xTURjM09ERmpORE01WWpWaVltTTVabUpr
+WmpFd01qaGpNR1F4TTJaaE1XSSZjdHo9QW1lcmljYS9Mb3NfQW5nZWxlcyZobD1lbg0KDQpJbnZp
+dGF0aW9uIGZyb20gR29vZ2xlIENhbGVuZGFyOiBodHRwczovL3d3dy5nb29nbGUuY29tL2NhbGVu
+ZGFyLw0KDQpZb3UgYXJlIHJlY2VpdmluZyB0aGlzIGVtYWlsIGF0IHRoZSBhY2NvdW50IHNhZ2Fy
+QG1hZ2ljbm90ZWJvb2suY29tIGJlY2F1c2UgIA0KeW91IGFyZSBzdWJzY3JpYmVkIGZvciBpbnZp
+dGF0aW9ucyBvbiBjYWxlbmRhciBzYWdhckBtYWdpY25vdGVib29rLmNvbS4NCg0KVG8gc3RvcCBy
+ZWNlaXZpbmcgdGhlc2Ugbm90aWZpY2F0aW9ucywgcGxlYXNlIGxvZyBpbiB0byAgDQpodHRwczov
+L3d3dy5nb29nbGUuY29tL2NhbGVuZGFyLyBhbmQgY2hhbmdlIHlvdXIgbm90aWZpY2F0aW9uIHNl
+dHRpbmdzIGZvciAgDQp0aGlzIGNhbGVuZGFyLg0K
+--20cf307f376c15732504d27afd0f
+Content-Type: text/html; charset=windows-1252
+Content-Transfer-Encoding: quoted-printable
+
+<div style=3D""><table cellspacing=3D"0" cellpadding=3D"8" border=3D"0" sum=
+mary=3D"" style=3D"width:100%;font-family:Arial,Sans-serif;border:1px Solid=
+ #ccc;border-width:1px 2px 2px 1px;background-color:#fff;"><tr><td><div sty=
+le=3D"padding:2px" itemscope itemtype=3D"http://schema.org/Event"><div styl=
+e=3D"float:right;font-weight:bold;font-size:13px"> <a href=3D"https://www.g=
+oogle.com/calendar/event?action=3DVIEW&amp;eid=3DNm1kaHYydWhzbGM1Z2F0NmxxbG=
+w4Zzd0OTAgc2FnYXJAbWFnaWNub3RlYm9vay5jb20&amp;tok=3DMjIjcm9iLmJhbGVuYUBnYXp=
+6YW5nLmNvbTI1ZjkwZjM1MDc3ODFjNDM5YjViYmM5ZmJkZjEwMjhjMGQxM2ZhMWI&amp;ctz=3D=
+America/Los_Angeles&amp;hl=3Den" style=3D"color:#20c;white-space:nowrap">mo=
+re details &raquo;</a><br></div><h3 style=3D"padding:0 0 6px 0;margin:0;fon=
+t-family:Arial,Sans-serif;font-size:16px;font-weight:bold;color:#222"><span=
+ itemprop=3D"name">Gazzang Product Discussion with Sagar Mehta</span></h3><=
+table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" summary=3D"Event det=
+ails"><tr><td style=3D"padding:0 1em 10px 0;font-family:Arial,Sans-serif;fo=
+nt-size:13px;color:#888;white-space:nowrap" valign=3D"top"><div><i style=3D=
+"font-style:normal">When</i></div></td><td style=3D"padding-bottom:10px;fon=
+t-family:Arial,Sans-serif;font-size:13px;color:#222" valign=3D"top">Wed Jan=
+ 9 10:05am =96 10:35am <span style=3D"color:#888">Pacific Time</span></td><=
+/tr><tr><td style=3D"padding:0 1em 10px 0;font-family:Arial,Sans-serif;font=
+-size:13px;color:#888;white-space:nowrap" valign=3D"top"><div><i style=3D"f=
+ont-style:normal">Where</i></div></td><td style=3D"padding-bottom:10px;font=
+-family:Arial,Sans-serif;font-size:13px;color:#222" valign=3D"top"><span it=
+emprop=3D"location" itemscope itemtype=3D"http://schema.org/Place"><span it=
+emprop=3D"name">Rob will call Sagar at (516) 312-2246</span><span dir=3D"lt=
+r"> (<a href=3D"http://maps.google.com/maps?q=3DRob+will+call+Sagar+at+(516=
+)+312-2246&amp;hl=3Den" style=3D"color:#20c;white-space:nowrap" target=3D"_=
+blank" itemprop=3D"map">map</a>)</span></span></td></tr><tr><td style=3D"pa=
+dding:0 1em 10px 0;font-family:Arial,Sans-serif;font-size:13px;color:#888;w=
+hite-space:nowrap" valign=3D"top"><div><i style=3D"font-style:normal">Calen=
+dar</i></div></td><td style=3D"padding-bottom:10px;font-family:Arial,Sans-s=
+erif;font-size:13px;color:#222" valign=3D"top">sagar@magicnotebook.com</td>=
+</tr><tr><td style=3D"padding:0 1em 10px 0;font-family:Arial,Sans-serif;fon=
+t-size:13px;color:#888;white-space:nowrap" valign=3D"top"><div><i style=3D"=
+font-style:normal">Who</i></div></td><td style=3D"padding-bottom:10px;font-=
+family:Arial,Sans-serif;font-size:13px;color:#222" valign=3D"top"><table ce=
+llspacing=3D"0" cellpadding=3D"0"><tr><td style=3D"padding-right:10px;font-=
+family:Arial,Sans-serif;font-size:13px;color:#222"><span style=3D"font-fami=
+ly:Courier New,monospace">&#x2022;</span></td><td style=3D"padding-right:10=
+px;font-family:Arial,Sans-serif;font-size:13px;color:#222"><div><div style=
+=3D"margin:0 0 0.3em 0">rob.balena@gazzang.com<span style=3D"font-size:11px=
+;color:#888"> - organizer</span></div></div></td></tr><tr><td style=3D"padd=
+ing-right:10px;font-family:Arial,Sans-serif;font-size:13px;color:#222"><spa=
+n style=3D"font-family:Courier New,monospace">&#x2022;</span></td><td style=
+=3D"padding-right:10px;font-family:Arial,Sans-serif;font-size:13px;color:#2=
+22"><div><div style=3D"margin:0 0 0.3em 0">Sagar Mehta</div></div></td></tr=
+></table></td></tr></table></div><p style=3D"color:#222;font-size:13px;marg=
+in:0"><span style=3D"color:#888">Going?&nbsp;&nbsp;&nbsp;</span><wbr><stron=
+g><a href=3D"https://www.google.com/calendar/event?action=3DRESPOND&amp;eid=
+=3DNm1kaHYydWhzbGM1Z2F0NmxxbGw4Zzd0OTAgc2FnYXJAbWFnaWNub3RlYm9vay5jb20&amp;=
+rst=3D1&amp;tok=3DMjIjcm9iLmJhbGVuYUBnYXp6YW5nLmNvbTI1ZjkwZjM1MDc3ODFjNDM5Y=
+jViYmM5ZmJkZjEwMjhjMGQxM2ZhMWI&amp;ctz=3DAmerica/Los_Angeles&amp;hl=3Den" s=
+tyle=3D"color:#20c;white-space:nowrap">Yes</a><span style=3D"margin:0 0.4em=
+;font-weight:normal"> - </span><a href=3D"https://www.google.com/calendar/e=
+vent?action=3DRESPOND&amp;eid=3DNm1kaHYydWhzbGM1Z2F0NmxxbGw4Zzd0OTAgc2FnYXJ=
+AbWFnaWNub3RlYm9vay5jb20&amp;rst=3D3&amp;tok=3DMjIjcm9iLmJhbGVuYUBnYXp6YW5n=
+LmNvbTI1ZjkwZjM1MDc3ODFjNDM5YjViYmM5ZmJkZjEwMjhjMGQxM2ZhMWI&amp;ctz=3DAmeri=
+ca/Los_Angeles&amp;hl=3Den" style=3D"color:#20c;white-space:nowrap">Maybe</=
+a><span style=3D"margin:0 0.4em;font-weight:normal"> - </span><a href=3D"ht=
+tps://www.google.com/calendar/event?action=3DRESPOND&amp;eid=3DNm1kaHYydWhz=
+bGM1Z2F0NmxxbGw4Zzd0OTAgc2FnYXJAbWFnaWNub3RlYm9vay5jb20&amp;rst=3D2&amp;tok=
+=3DMjIjcm9iLmJhbGVuYUBnYXp6YW5nLmNvbTI1ZjkwZjM1MDc3ODFjNDM5YjViYmM5ZmJkZjEw=
+MjhjMGQxM2ZhMWI&amp;ctz=3DAmerica/Los_Angeles&amp;hl=3Den" style=3D"color:#=
+20c;white-space:nowrap">No</a></strong>&nbsp;&nbsp;&nbsp;&nbsp;<wbr><a href=
+=3D"https://www.google.com/calendar/event?action=3DVIEW&amp;eid=3DNm1kaHYyd=
+WhzbGM1Z2F0NmxxbGw4Zzd0OTAgc2FnYXJAbWFnaWNub3RlYm9vay5jb20&amp;tok=3DMjIjcm=
+9iLmJhbGVuYUBnYXp6YW5nLmNvbTI1ZjkwZjM1MDc3ODFjNDM5YjViYmM5ZmJkZjEwMjhjMGQxM=
+2ZhMWI&amp;ctz=3DAmerica/Los_Angeles&amp;hl=3Den" style=3D"color:#20c;white=
+-space:nowrap">more options &raquo;</a></p></td></tr><tr><td style=3D"backg=
+round-color:#f6f6f6;color:#888;border-top:1px Solid #ccc;font-family:Arial,=
+Sans-serif;font-size:11px"><p>Invitation from <a href=3D"https://www.google=
+.com/calendar/" target=3D"_blank" style=3D"">Google Calendar</a></p><p>You =
+are receiving this email at the account sagar@magicnotebook.com because you=
+ are subscribed for invitations on calendar sagar@magicnotebook.com.</p><p>=
+To stop receiving these notifications, please log in to https://www.google.=
+com/calendar/ and change your notification settings for this calendar.</p><=
+/td></tr></table></div>
+--20cf307f376c15732504d27afd0f
+Content-Type: text/calendar; charset=UTF-8; method=REQUEST
+Content-Transfer-Encoding: 7bit
+
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20130109T180500Z
+DTEND:20130109T183500Z
+DTSTAMP:20130104T185300Z
+ORGANIZER;CN=rob.balena@gazzang.com:mailto:rob.balena@gazzang.com
+UID:6mdhv2uhslc5gat6lqll8g7t90@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Sagar Mehta;X-NUM-GUESTS=0:mailto:sagar@magicnotebook.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=rob.balena@gazzang.com;X-NUM-GUESTS=0:mailto:rob.balena@gazzang.com
+CREATED:20130104T185259Z
+DESCRIPTION:View your event at http://www.google.com/calendar/event?action=
+ VIEW&eid=Nm1kaHYydWhzbGM1Z2F0NmxxbGw4Zzd0OTAgc2FnYXJAbWFnaWNub3RlYm9vay5jb2
+ 0&tok=MjIjcm9iLmJhbGVuYUBnYXp6YW5nLmNvbTI1ZjkwZjM1MDc3ODFjNDM5YjViYmM5ZmJkZ
+ jEwMjhjMGQxM2ZhMWI&ctz=America/Los_Angeles&hl=en.
+LAST-MODIFIED:20130104T185300Z
+LOCATION:Rob will call Sagar at (516) 312-2246
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Gazzang Product Discussion with Sagar Mehta
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
+
+--20cf307f376c15732504d27afd0f--
+--20cf307f376c15732904d27afd11
+Content-Type: application/ics; name="invite.ics"
+Content-Disposition: attachment; filename="invite.ics"
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBTEVOREFSDQpQUk9ESUQ6LS8vR29vZ2xlIEluYy8vR29vZ2xlIENhbGVuZGFyIDcw
+LjkwNTQvL0VODQpWRVJTSU9OOjIuMA0KQ0FMU0NBTEU6R1JFR09SSUFODQpNRVRIT0Q6UkVRVUVT
+VA0KQkVHSU46VkVWRU5UDQpEVFNUQVJUOjIwMTMwMTA5VDE4MDUwMFoNCkRURU5EOjIwMTMwMTA5
+VDE4MzUwMFoNCkRUU1RBTVA6MjAxMzAxMDRUMTg1MzAwWg0KT1JHQU5JWkVSO0NOPXJvYi5iYWxl
+bmFAZ2F6emFuZy5jb206bWFpbHRvOnJvYi5iYWxlbmFAZ2F6emFuZy5jb20NClVJRDo2bWRodjJ1
+aHNsYzVnYXQ2bHFsbDhnN3Q5MEBnb29nbGUuY29tDQpBVFRFTkRFRTtDVVRZUEU9SU5ESVZJRFVB
+TDtST0xFPVJFUS1QQVJUSUNJUEFOVDtQQVJUU1RBVD1ORUVEUy1BQ1RJT047UlNWUD0NCiBUUlVF
+O0NOPVNhZ2FyIE1laHRhO1gtTlVNLUdVRVNUUz0wOm1haWx0bzpzYWdhckBtYWdpY25vdGVib29r
+LmNvbQ0KQVRURU5ERUU7Q1VUWVBFPUlORElWSURVQUw7Uk9MRT1SRVEtUEFSVElDSVBBTlQ7UEFS
+VFNUQVQ9QUNDRVBURUQ7UlNWUD1UUlVFDQogO0NOPXJvYi5iYWxlbmFAZ2F6emFuZy5jb207WC1O
+VU0tR1VFU1RTPTA6bWFpbHRvOnJvYi5iYWxlbmFAZ2F6emFuZy5jb20NCkNSRUFURUQ6MjAxMzAx
+MDRUMTg1MjU5Wg0KREVTQ1JJUFRJT046VmlldyB5b3VyIGV2ZW50IGF0IGh0dHA6Ly93d3cuZ29v
+Z2xlLmNvbS9jYWxlbmRhci9ldmVudD9hY3Rpb249DQogVklFVyZlaWQ9Tm0xa2FIWXlkV2h6YkdN
+MVoyRjBObXh4Ykd3NFp6ZDBPVEFnYzJGbllYSkFiV0ZuYVdOdWIzUmxZbTl2YXk1amIyDQogMCZ0
+b2s9TWpJamNtOWlMbUpoYkdWdVlVQm5ZWHA2WVc1bkxtTnZiVEkxWmprd1pqTTFNRGMzT0RGak5E
+TTVZalZpWW1NNVptSmtaDQogakV3TWpoak1HUXhNMlpoTVdJJmN0ej1BbWVyaWNhL0xvc19Bbmdl
+bGVzJmhsPWVuLg0KTEFTVC1NT0RJRklFRDoyMDEzMDEwNFQxODUzMDBaDQpMT0NBVElPTjpSb2Ig
+d2lsbCBjYWxsIFNhZ2FyIGF0ICg1MTYpIDMxMi0yMjQ2DQpTRVFVRU5DRTowDQpTVEFUVVM6Q09O
+RklSTUVEDQpTVU1NQVJZOkdhenphbmcgUHJvZHVjdCBEaXNjdXNzaW9uIHdpdGggU2FnYXIgTWVo
+dGENClRSQU5TUDpPUEFRVUUNCkVORDpWRVZFTlQNCkVORDpWQ0FMRU5EQVINCg==
+--20cf307f376c15732904d27afd11--
