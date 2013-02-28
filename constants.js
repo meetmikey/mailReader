@@ -23,6 +23,7 @@ var urlFilterText = [
   , 'magicnotebook.com'
   , 'meetmikey.com'
   , 'email.launchrock.com'
+  , 'trypico.com'
 ];
 
 define('URL_FILTER_TEXT', urlFilterText);
