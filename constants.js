@@ -28,3 +28,4 @@ var urlFilterText = [
 define('URL_FILTER_TEXT', urlFilterText);
 define('PDF_DOWNLOAD_TIMEOUT', 20000);
 define('LINK_SUMMARY_CUTOFF', 300);
+define('MAX_DUPLICATE_LINKS_FOR_USER', 4);
