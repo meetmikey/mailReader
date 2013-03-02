@@ -24,6 +24,7 @@ var urlFilterText = [
   , 'meetmikey.com'
   , 'email.launchrock.com'
   , 'trypico.com'
+  , 'app.yesware.com'
 ];
 
 define('URL_FILTER_TEXT', urlFilterText);
