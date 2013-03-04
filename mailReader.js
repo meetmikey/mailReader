@@ -8,8 +8,9 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
 winston.doInfo('mailReader app running...');
 
 process.on('uncaughtException', function (err) {
-  winston.doError('uncaughtException:', {err : err});
-  process.exit(1)});
+  winston.doError('uncaughtException:', {stack : err.stack, message : err.message});
+  process.exit(1);
+});
 
 var MAX_HANDLERS = 20;
 if ( process && process.argv && ( process.argv.length > 2 ) ) {
