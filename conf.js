@@ -1,7 +1,7 @@
 var environment = process.env.NODE_ENV;
 
 //Local
-var storeMailBody = false;
+var storeMailBody = true;
 
 if (environment == 'production') {
   storeMailBody = false;  
