@@ -32,6 +32,6 @@ describe('extract title from html', function() {
     });
     waitsFor( function() {
       return ( title == titleCompare );
-    }, "title never set", 1000);
+    }, "title never set", 10000);
   });
 });
