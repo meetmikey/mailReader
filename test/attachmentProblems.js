@@ -5,7 +5,7 @@ var MailParser = require('mailparser').MailParser
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , async = require('async')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
-  , s3Utils = require(serverCommon + '/lib/s3Utils')
+  , cloudStorageUtils = require(serverCommon + '/lib/cloudStorageUtils')
   , AttachmentModel = require(serverCommon + '/schema/attachment').AttachmentModel
 
 var mailParser = new MailParser();
@@ -16,8 +16,8 @@ mailParser.on('end', function(mail) {
 var outputPath = '/home/jdurack/Desktop/attachmentOutput.docx';
 var userId = 'TEST_USER';
 
-var s3Path = '/rawEmail/BAD_MAIL.txt';
-s3Utils.getFile(s3Path, true, function(err, res) {
+var cloudPath = '/rawEmail/BAD_MAIL.txt';
+cloudStorageUtils.getFile(cloudPath, true, function(err, res) {
   if ( err ) {
     winston.doS3Error(err);
 
@@ -70,8 +70,8 @@ checkAttachment = function(mailAttachment, callback) {
 
   var dummyAttachment = new AttachmentModel({});
 
-  var s3Path = s3Utils.getAttachmentS3Path(dummyAttachment);
-  s3Utils.putBuffer(mailAttachment.content, s3Path, headers, true,
+  var cloudPath = cloudStorageUtils.getAttachmentPath(dummyAttachment);
+  cloudStorageUtils.putBuffer(mailAttachment.content, cloudPath, headers, true,
     function(err, res) {
       if ( err ) {
         callback( err );

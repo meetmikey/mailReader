@@ -5,7 +5,7 @@ var MailParser = require('mailparser').MailParser
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , async = require('async')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
-  , s3Utils = require(serverCommon + '/lib/s3Utils')
+  , cloudStorageUtils = require(serverCommon + '/lib/cloudStorageUtils')
   , AttachmentModel = require(serverCommon + '/schema/attachment').AttachmentModel
 
 var mailParser = new MailParser();
