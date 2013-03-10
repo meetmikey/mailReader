@@ -71,7 +71,7 @@ checkAttachment = function(mailAttachment, callback) {
   var dummyAttachment = new AttachmentModel({});
 
   var cloudPath = cloudStorageUtils.getAttachmentPath(dummyAttachment);
-  cloudStorageUtils.putBuffer(mailAttachment.content, cloudPath, headers, true,
+  cloudStorageUtils.putBuffer(mailAttachment.content, cloudPath, headers, true, false,
     function(err, res) {
       if ( err ) {
         callback( err );

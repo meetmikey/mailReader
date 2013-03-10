@@ -25,7 +25,7 @@ fs.readFile(filePath, function(err, data) {
       //, "Content-Disposition" : 'attachment; filename=' + filename
     }
 
-    cloudStorageUtils.putBuffer(data, s3Path, headers, true, function(err, res) {
+    cloudStorageUtils.putBuffer(data, s3Path, headers, true, false, function(err, res) {
       if ( err ) {
         winston.handleError(err);
       } else {
