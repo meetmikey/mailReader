@@ -27,7 +27,6 @@ var urlFilterText = [
   , 'app.yesware.com'
 ];
 
-
 define('MIN_IMAGE_FILE_SIZE', 10000);
 
 define('URL_FILTER_TEXT', urlFilterText);
