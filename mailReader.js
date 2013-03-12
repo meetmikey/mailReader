@@ -1,15 +1,13 @@
 var serverCommon = process.env.SERVER_COMMON;
 
+var winston = require (serverCommon + '/lib/winstonWrapper').winston;
+winston.logBreak();
+
 var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , sqsConnect = require(serverCommon + '/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
-  , winston = require (serverCommon + '/lib/winstonWrapper').winston
 
 winston.doInfo('mailReader app running...');
-
-// clear visual indication in logs of restart
-console.log ('\n\n\n\n\n\n\n\n\n\n\n\n\n');
-console.error ('\n\n\n\n\n\n\n\n\n\n\n\n\n');
 
 process.on('uncaughtException', function (err) {
   winston.doError('uncaughtException:', {stack : err.stack, message : err.message});

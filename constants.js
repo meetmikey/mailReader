@@ -25,6 +25,7 @@ var urlFilterText = [
   , 'email.launchrock.com'
   , 'trypico.com'
   , 'app.yesware.com'
+  , 'paypal.com'
 ];
 
 define('MIN_IMAGE_FILE_SIZE', 10000);
