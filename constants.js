@@ -26,6 +26,8 @@ var urlFilterText = [
   , 'trypico.com'
   , 'app.yesware.com'
   , 'paypal.com'
+  , 'dmanalytics'
+  , 'app.asana.com'
 ];
 
 define('MIN_IMAGE_FILE_SIZE', 10000);
