@@ -6,6 +6,7 @@ winston.logBreak();
 var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , sqsConnect = require(serverCommon + '/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
+  , mailReaderConstants = require('./constants')
 
 winston.doInfo('mailReader app running...');
 
@@ -14,9 +15,9 @@ process.on('uncaughtException', function (err) {
   process.exit(1);
 });
 
-var MAX_HANDLERS = 20;
+var maxHandlers = mailReaderConstants.MAX_HANDLERS;
 if ( process && process.argv && ( process.argv.length > 2 ) ) {
-  MAX_HANDLERS = process.argv[2];
+  maxHandlers = process.argv[2];
 }
 
 sqsConnect.pollMailReaderQueue(
@@ -29,7 +30,7 @@ sqsConnect.pollMailReaderQueue(
         callback();
       }
     })
-  }, MAX_HANDLERS
+  }, maxHandlers
 );
 
 
@@ -43,5 +44,5 @@ sqsConnect.pollMailReaderQuickQueue(
         callback();
       }
     })
-  }, MAX_HANDLERS
+  }, maxHandlers
 );

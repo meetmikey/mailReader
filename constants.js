@@ -30,6 +30,8 @@ var urlFilterText = [
   , 'app.asana.com'
 ];
 
+define('MAX_HANDLERS', 200);
+
 define('MIN_IMAGE_FILE_SIZE', 10000);
 
 define('URL_FILTER_TEXT', urlFilterText);
