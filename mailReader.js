@@ -1,7 +1,7 @@
 var serverCommon = process.env.SERVER_COMMON;
 
 var appInitUtils = require(serverCommon + '/lib/appInitUtils')
-  , winston = require(serverCommon + '/lib/winstonWrapper').wrapper
+  , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , sqsConnect = require(serverCommon + '/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
   , mailReaderConstants = require('./constants')
