@@ -8,7 +8,6 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , mailReader = require('./lib/mailReader')
   , mailReaderConstants = require('./constants')
 
-winston.doInfo('mailReader app running...');
 
 process.on('uncaughtException', function (err) {
   winston.doError('uncaughtException:', {stack : err.stack, message : err.message});
@@ -19,6 +18,9 @@ var maxHandlers = mailReaderConstants.MAX_HANDLERS;
 if ( process && process.argv && ( process.argv.length > 2 ) ) {
   maxHandlers = process.argv[2];
 }
+
+winston.doInfo('mailReader app running...');
+winston.doInfo('maxHandlers: ' + maxHandlers);
 
 sqsConnect.pollMailReaderQueue(
   function(messageString, callback) {
