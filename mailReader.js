@@ -2,7 +2,6 @@ var serverCommon = process.env.SERVER_COMMON;
 
 var winston = require (serverCommon + '/lib/winstonWrapper').winston;
 winston.logBreak();
-
 winston.doInfo('mailReader app running...');
 
 var mongoose = require(serverCommon + '/lib/mongooseConnect')
