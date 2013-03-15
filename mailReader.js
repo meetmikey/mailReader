@@ -3,6 +3,8 @@ var serverCommon = process.env.SERVER_COMMON;
 var winston = require (serverCommon + '/lib/winstonWrapper').winston;
 winston.logBreak();
 
+winston.doInfo('mailReader app running...');
+
 var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , sqsConnect = require(serverCommon + '/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
@@ -19,7 +21,6 @@ if ( process && process.argv && ( process.argv.length > 2 ) ) {
   maxHandlers = process.argv[2];
 }
 
-winston.doInfo('mailReader app running...');
 winston.doInfo('maxHandlers: ' + maxHandlers);
 
 sqsConnect.pollMailReaderQueue(
