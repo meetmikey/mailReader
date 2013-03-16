@@ -4,6 +4,7 @@ var appInitUtils = require(serverCommon + '/lib/appInitUtils')
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , sqsConnect = require(serverCommon + '/lib/sqsConnect')
   , mailReader = require('./lib/mailReader')
+  , serverCommonConf = require (serverCommon + '/conf')
   , mailReaderConstants = require('./constants')
 
 var initActions = [
@@ -13,7 +14,7 @@ var initActions = [
 
 //initApp() will not callback an error.
 //If something fails, it will just exit the process.
-appInitUtils.initApp( 'mailReader', initActions, function() {
+appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
   var maxHandlers = mailReaderConstants.MAX_HANDLERS;
   if ( process && process.argv && ( process.argv.length > 2 ) ) {
     maxHandlers = process.argv[2];
