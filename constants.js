@@ -24,11 +24,14 @@ var urlFilterText = [
   , 'meetmikey.com'
   , 'email.launchrock.com'
   , 'trypico.com'
-  , 'app.yesware.com'
+  , 'app.yesware.com' // tracking
   , 'paypal.com'
-  , 'dmanalytics'
+  , 'dmanalytics' // tracking
   , 'facebook.com' // usually requires log in so most
-  , 'app.asana.com'
+  , 'app.asana.com' // requires login
+  , 'googleusercontent.com' // fonts
+  , 'www.amazon.com'
+  , 'google.ca'
 ];
 
 define('MAX_HANDLERS', 50);
