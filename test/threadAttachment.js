@@ -9,6 +9,7 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
   , MailModel = require(serverCommon + '/schema/mail').MailModel
   , AttachmentModel = require(serverCommon + '/schema/attachment').AttachmentModel
   , async = require('async')
+  , appInitUtils = require (serverCommon + '/lib/appInitUtils')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
   , crypto = require('crypto')
 
@@ -25,6 +26,16 @@ var uid = 1;
 var mailParserDoneCallback;
 
 var threadAttachment = this;
+
+
+
+var initActions = [
+  appInitUtils.CONNECT_MONGO
+];
+
+appInitUtils.initApp( 'threadAttachment', initActions, null, function() {
+  threadAttachment.run();  
+});
 
 
 exports.handleParsedMail = function( parsedMail, callback ) {
@@ -64,6 +75,7 @@ exports.createMail = function( parsedMail, callback ) {
     , sentDate: mailUtils.getSentDate( parsedMail )
     , mailReaderState: 'started'
     , gmThreadId: gmThreadId
+    , gmMsgId : '123456'
     , hasAttachment: hasAttachment
     , hasMarketingFrom: false
     , hasMarketingText: false
@@ -133,4 +145,3 @@ exports.cleanup = function() {
   });
 }
 
-threadAttachment.run();

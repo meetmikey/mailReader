@@ -27,6 +27,7 @@ var urlFilterText = [
   , 'app.yesware.com'
   , 'paypal.com'
   , 'dmanalytics'
+  , 'facebook.com' // usually requires log in so most
   , 'app.asana.com'
 ];
 
