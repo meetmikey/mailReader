@@ -31,7 +31,7 @@ var urlFilterText = [
   , 'app.asana.com'
 ];
 
-define('MAX_WORKERS', 3);
+define('MAX_WORKERS', 1);
 
 define('MIN_IMAGE_FILE_SIZE', 10000);
 
