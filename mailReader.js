@@ -15,12 +15,12 @@ var initActions = [
 //initApp() will not callback an error.
 //If something fails, it will just exit the process.
 appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
-  var maxHandlers = mailReaderConstants.MAX_HANDLERS;
+  var maxWorkers = mailReaderConstants.MAX_WORKERS;
   if ( process && process.argv && ( process.argv.length > 2 ) ) {
-    maxHandlers = process.argv[2];
+    maxWorkers = process.argv[2];
   }
 
-  winston.doInfo('maxHandlers: ' + maxHandlers);
+  winston.doInfo('maxWorkers: ' + maxWorkers);
 
   sqsConnect.pollMailReaderQueue(
     function(messageString, callback) {
@@ -32,7 +32,7 @@ appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
           callback();
         }
       })
-    }, maxHandlers
+    }, maxWorkers
   );
 
   sqsConnect.pollMailReaderQuickQueue(
@@ -45,6 +45,6 @@ appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
           callback();
         }
       })
-    }, maxHandlers
+    }, maxWorkers
   );
 });

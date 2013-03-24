@@ -34,7 +34,7 @@ var urlFilterText = [
   , 'google.ca'
 ];
 
-define('MAX_HANDLERS', 50);
+define('MAX_WORKERS', 1);
 
 define('MIN_IMAGE_FILE_SIZE', 10000);
 
