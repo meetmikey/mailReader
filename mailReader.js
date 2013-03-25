@@ -15,6 +15,7 @@ var initActions = [
 //initApp() will not callback an error.
 //If something fails, it will just exit the process.
 appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
+  
   var maxWorkers = mailReaderConstants.MAX_WORKERS;
   if ( process && process.argv && ( process.argv.length > 2 ) ) {
     maxWorkers = process.argv[2];
@@ -32,7 +33,7 @@ appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
           callback();
         }
       })
-    }, maxWorkers
+    }, maxWorkers, mailReaderConstants.WORKER_TIMEOUT
   );
 
   sqsConnect.pollMailReaderQuickQueue(
@@ -45,6 +46,6 @@ appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
           callback();
         }
       })
-    }, maxWorkers
+    }, maxWorkers, mailReaderConstants.WORKER_TIMEOUT
   );
 });
