@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-      "mailparser": ">=0.2.31"
+      "mailparser": ">=0.3.4"
     , "async": ">=0.2.6"
     , "diffbot": "0.1.0"
     , "request": ">=2.12.0"
