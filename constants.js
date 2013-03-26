@@ -29,7 +29,7 @@ var urlFilterText = [
   , 'dmanalytics' // tracking
   , 'facebook.com' // usually requires log in so most
   , 'app.asana.com' // requires login
-  , 'googleusercontent.com' // fonts
+  , 'themes.googleusercontent.com' // fonts
   , 'www.amazon.com'
   , 'google.ca'
   , 'groups.google.com'
