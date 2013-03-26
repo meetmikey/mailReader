@@ -29,6 +29,8 @@ var urlFilterText = [
   , 'dmanalytics'
   , 'facebook.com' // usually requires log in so most
   , 'app.asana.com'
+  , 'sendgrid'
+  , 'abuse'
 ];
 
 define('MAX_WORKERS', 5);
