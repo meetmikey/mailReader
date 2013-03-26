@@ -33,10 +33,16 @@ var urlFilterText = [
   , 'www.amazon.com'
   , 'google.ca'
   , 'groups.google.com'
-  , 's3.amazon.aws.com'
+  , 's3.amazonaws.com/magicnotebookstatic'
+  , 'app.asana.com'
+  , 'sendgrid'
+  , 'abuse'
 ];
 
 define('MAX_WORKERS', 5);
+
+define('WORKER_TIMEOUT', 5*60*1000);
+>>>>>>> ddbb33fe5ed1a03e1939cdac62d2d952e87be325
 
 define('MIN_IMAGE_FILE_SIZE', 10000);
 
