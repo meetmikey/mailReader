@@ -32,9 +32,11 @@ var urlFilterText = [
   , 'googleusercontent.com' // fonts
   , 'www.amazon.com'
   , 'google.ca'
+  , 'groups.google.com'
+  , 's3.amazon.aws.com'
 ];
 
-define('MAX_WORKERS', 1);
+define('MAX_WORKERS', 5);
 
 define('MIN_IMAGE_FILE_SIZE', 10000);
 
