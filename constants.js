@@ -33,6 +33,8 @@ var urlFilterText = [
   , 'abuse'
 ];
 
+define('STREAM_ATTACHMENTS', true);
+
 define('MAX_WORKERS', 5);
 
 define('WORKER_TIMEOUT', 5*60*1000);

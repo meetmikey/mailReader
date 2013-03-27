@@ -4,6 +4,7 @@ var fs = require('fs')
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , appInitUtils = require(serverCommon + '/lib/appInitUtils')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
+  , utils = require(serverCommon + '/lib/utils')
   , mongoose = require(serverCommon + '/lib/mongooseConnect').mongoose
   , MailParser = require('mailparser').MailParser
   , MailModel = require(serverCommon + '/schema/mail').MailModel
@@ -20,19 +21,41 @@ var initActions = [
   appInitUtils.CONNECT_MONGO
 ];
 
+
 appInitUtils.initApp( 'bigAttachment', initActions, null, function() {
 
+  var streamAttachments = true;
   var path = './data/mailParserBadEmail.txt';
+  var outputPathStream = '/home/jdurack/Desktop/streamOut.pdf';
+  var outputPath = '/home/jdurack/Desktop/regularOut.pdf';
   //var path = './data/googleDocLinkMail.txt';
    
   var mailParser = new MailParser({
-    streamAttachments: true
+    streamAttachments: streamAttachments
   });
+
+
   mailParser.on('end', function( parsedMail ) {
   
-    console.log(parsedMail);
+    //console.log(parsedMail);
+    winston.doInfo('parsedMail done!');
+
+    if ( ! streamAttachments ) {
+      fs.writeFileSync( outputPath, parsedMail.attachments[0].content );
+    }
 
     mongoose.disconnect();
+  });
+
+  mailParser.on("attachment", function(attachment){
+
+
+    winston.doInfo('attachment', {attachment: attachment});
+
+    utils.streamToBuffer( attachment.stream, function(err, attachmentBuffer ) {
+      winston.doInfo('got buffer! length: ' + attachmentBuffer.length);
+      fs.writeFileSync( outputPathStream, attachmentBuffer );
+    });
   });
 
   var inp = fs.createReadStream( path );
