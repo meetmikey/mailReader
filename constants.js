@@ -24,10 +24,16 @@ var urlFilterText = [
   , 'meetmikey.com'
   , 'email.launchrock.com'
   , 'trypico.com'
-  , 'app.yesware.com'
+  , 'app.yesware.com' // tracking
   , 'paypal.com'
-  , 'dmanalytics'
+  , 'dmanalytics' // tracking
   , 'facebook.com' // usually requires log in so most
+  , 'app.asana.com' // requires login
+  , 'themes.googleusercontent.com' // fonts
+  , 'www.amazon.com'
+  , 'google.ca'
+  , 'groups.google.com'
+  , 's3.amazonaws.com/magicnotebook'
   , 'app.asana.com'
   , 'sendgrid'
   , 'abuse'
