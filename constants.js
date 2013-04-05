@@ -41,7 +41,7 @@ var urlFilterText = [
 
 define('STREAM_ATTACHMENTS', true);
 
-define('MAX_WORKERS', 20);
+define('MAX_WORKERS', 10);
 
 define('WORKER_TIMEOUT', 5*60*1000);
 
