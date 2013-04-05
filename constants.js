@@ -34,6 +34,8 @@ var urlFilterText = [
   , 'google.ca'
   , 'groups.google.com'
   , 's3.amazonaws.com/magicnotebook'
+  , 'send.angel.co'
+  , '?click'
   , 'app.asana.com'
   , 'sendgrid'
   , 'abuse'
