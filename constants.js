@@ -36,6 +36,7 @@ var urlFilterText = [
   , 's3.amazonaws.com/magicnotebook'
   , 'send.angel.co'
   , '?click'
+  , 'contactually.com'
   , 'app.asana.com'
   , 'sendgrid'
   , 'abuse'
