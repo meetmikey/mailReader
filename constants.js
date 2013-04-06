@@ -58,4 +58,4 @@ define('LINK_SUMMARY_CUTOFF', 300);
 
 define('MAX_DUPLICATE_LINKS_FOR_USER', 4);
 
-define ('MAX_HTML_TAGS', 10);
+define ('MAX_HTML_TAGS', 15);
