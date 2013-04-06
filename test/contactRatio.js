@@ -1,6 +1,5 @@
 var serverCommon = process.env.SERVER_COMMON;
 
-
 var mongoose = require(serverCommon + '/lib/mongooseConnect').mongoose
   , appInitUtils = require(serverCommon + '/lib/appInitUtils')
   , conf = require(serverCommon + '/conf')
@@ -9,58 +8,120 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect').mongoose
   , contactUtils = require(serverCommon + '/lib/contactUtils')
   , ReceiveMRModel = require(serverCommon + '/schema/contact').ReceiveMRModel
   , linkHandler = require('../lib/linkHandler')
+  , fs = require('fs')
 
-var initActions = [
-  appInitUtils.CONNECT_MONGO
-];
 
-var userId = '5153c69c13934f3811000006';
+var run = function() {
 
-appInitUtils.initApp( 'getContactData', initActions, conf, function() {
+  winston.doInfo('running');
 
-  var run = function() {
+  var data = {};
 
-    winston.doInfo('running');
+  var receiveFile = './data/jdReceive.json';
+  var sentAndCoReceiveFile = './data/jdSentAndCoReceive.json';
 
-    var ratios = {};
+  var receiveData = fs.readFileSync(receiveFile).toString();
+  var sentAndCoReceiveData = fs.readFileSync(sentAndCoReceiveFile).toString();
 
-    ReceiveMRModel.find({'_id.userId':userId})
-    .select('id _id _id.email _id.userId value')
-    .exec( function(err, foundReceiveModels) {
-      if ( err ) {
-        winston.doMongoError(err);
-        cleanup();
+  var receiveJSON = JSON.parse(receiveData);
+  var sentAndCoReceiveJSON = JSON.parse(sentAndCoReceiveData);
 
-      } else {
-        async.each( foundReceiveModels, function(foundReceiveModel, eachCallback) {
+  async.each( receiveJSON, function(receive, eachCallback) {
 
-          winston.doInfo('foundReceiveModel', {foundReceiveModel: foundReceiveModel});
+    var contactEmail = receive._id.email;
+    if ( ! contactEmail ) {
+      //winston.doWarn('no email', {receive: receive});
+      eachCallback();
 
-          var contactEmail = foundReceiveModel._id.email;
-          contactUtils.getContactData( userId, contactEmail, function(err, contactData) {
-            if ( err ) {
-              eachCallback( err );
+    } else {
+      data[contactEmail] = {
+          sent: 0
+        , coreceive: 0
+        , receive: receive.value
+      };
+      eachCallback();
+    }
 
-            } else {
-              var ratio = linkHandler.getContactRatio( contactData );
-              winston.doInfo('ratio', {ratio: ratio, email: contactEmail});
-              eachCallback();
-            }
-          });
+  }, function(err) {
+    if ( err ) {
+      winston.handleError(err);
 
-        }, function(err) {
-          if ( err ) {
-            winston.handleError(err);
+    } else {
+      async.each( sentAndCoReceiveJSON, function(sentAndCoReceive, eachCallback) {
+
+        var contactEmail = sentAndCoReceive._id.email;
+        if ( ! contactEmail ) {
+          //winston.doWarn('no email', {sentAndCoReceive: sentAndCoReceive});
+          eachCallback();
+
+        } else {
+          var dataKeys = Object.keys(data);
+          if ( dataKeys.indexOf( contactEmail ) === -1 ) {
+            data[contactEmail] = {
+                sent: 0
+              , coreceive: 0
+              , recieve: 0
+            }  
           }
-          cleanup();
-        });
-      }
-    });
-  }
+          data[contactEmail]['sent'] = sentAndCoReceive.value.sent;
+          data[contactEmail]['coreceive'] = sentAndCoReceive.value.corecipient;
+          eachCallback();
+        }
 
-  var cleanup = function() {
-    mongoose.disconnect();
-  }
+      }, function(err) {
+        if ( err ) {
+          winston.handleError(err);
 
-  run();
-});
+        } else {
+          checkData(data);
+        }
+      });
+    }
+  });
+}
+
+var checkData = function(data) {
+
+  var ratioData = [];
+
+  var dataKeys = Object.keys(data);
+
+  async.each(dataKeys, function(key, eachCallback) {
+    var datum = data[key];
+
+    var numerator = datum['sent'];
+    var denominator = datum['recieve'];
+
+    var ratio = 0;
+    if ( denominator ) {
+      ratio = numerator / denominator;
+    }
+    data[key].ratio = ratio;
+    var ratioDatum = {
+        email: key
+      , ratio: ratio
+      , sent: datum.sent
+      , coreceive: datum.corecieve
+      , receive: datum.recieve
+    }
+    ratioData.push(ratioDatum);
+    eachCallback();
+  }, function(err) {
+    if ( err ) {
+      winston.handleError(err);
+
+    } else {
+      ratioData.sort( function(a, b) {
+        if ( a.ratio > b.ratio ) {
+          return -1;
+        } else if ( a.ratio == b.ratio ) {
+          return 0;
+        }
+        return 1;
+      });
+      winston.doInfo('data', {data:ratioData});
+    }
+  });
+}
+
+run();
