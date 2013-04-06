@@ -73,6 +73,7 @@ var urlFilterText = [
   , 'esurance.com'
   , 'avis.com'
   , 'aavacations.com'
+  , 'office.trapeze.com'
   , 'hotmail.com'
   , 'dealersocket.com'
   , 'airbnb.com'
