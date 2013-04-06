@@ -80,6 +80,7 @@ var urlFilterText = [
   , 'united.com'
   , 'mailman.'
   , 'invite'
+  , 'mailjet.com'
   , 'zerply.com'
   , 'mail.'
   , 'contactually.com'
