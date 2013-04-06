@@ -1,0 +1,182 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: svmknicks33@gmail.com
+Received: by 10.49.35.136 with SMTP id h8csp62545qej;
+        Wed, 27 Feb 2013 17:58:46 -0800 (PST)
+X-Received: by 10.152.145.134 with SMTP id su6mr3905271lab.35.1362016725587;
+        Wed, 27 Feb 2013 17:58:45 -0800 (PST)
+Return-Path: <sagar+caf_=svmknicks33=gmail.com@delostechnologies.com>
+Received: from mail-lb0-f179.google.com (mail-lb0-f179.google.com [209.85.217.179])
+        by mx.google.com with ESMTPS id tj5si2954165lab.125.2013.02.27.17.58.43
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Wed, 27 Feb 2013 17:58:44 -0800 (PST)
+Received-SPF: neutral (google.com: 209.85.217.179 is neither permitted nor denied by domain of sagar+caf_=svmknicks33=gmail.com@delostechnologies.com) client-ip=209.85.217.179;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 209.85.217.179 is neither permitted nor denied by domain of sagar+caf_=svmknicks33=gmail.com@delostechnologies.com) smtp.mail=sagar+caf_=svmknicks33=gmail.com@delostechnologies.com
+Received: by mail-lb0-f179.google.com with SMTP id j14so997285lbo.10
+        for <svmknicks33@gmail.com>; Wed, 27 Feb 2013 17:58:43 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=x-received:x-forwarded-to:x-forwarded-for:delivered-to:x-received
+         :received-spf:x-virtualserver:x-virtualservergroup:x-mailingid
+         :x-smheadermap:x-destination-id:x-smfbl:content-transfer-encoding
+         :content-type:x-report-abuse:reply-to:mime-version:message-id
+         :subject:date:to:from:x-gm-message-state;
+        bh=ni0ZaJ9aRSrNWphyOWHf1Wf5c/1Xya0AojhmUyIy2no=;
+        b=SFRXImxuFlUzMRAWUUfe1YjCiITYbldCQl1oMoiAl/iU/kUaA6rQ/nanDcjx1ickzv
+         DFk41AxmX8EdBpZ0D0jarpd1Wuq+/SnhYC4veE7rRSzt5MjIgiveaHlo7PUcdfcNzR23
+         2hAn0qxPzs84g6JH6HQIRo8r5HfClWMwPD4y509hP21CpMq52bNqB1kJN1pXo/JDmwD6
+         TWWnJGacUd4tD+OFFMBUi86Y/9SMF4CAU/utgq5zjV8/IOHAiFzerBdsABYejvMdoC5Y
+         2N24NCN61KHyl25qVZvzO9LR8IRj9FsSTCYwvagHazL16YHTfkWdOwEJAKmt5M1Z5GbF
+         crXg==
+X-Received: by 10.152.111.67 with SMTP id ig3mr3878954lab.41.1362016723638;
+        Wed, 27 Feb 2013 17:58:43 -0800 (PST)
+X-Forwarded-To: svmknicks33@gmail.com
+X-Forwarded-For: sagar@delostechnologies.com svmknicks33@gmail.com
+Delivered-To: sagar@delostechnologies.com
+Received: by 10.112.63.45 with SMTP id d13csp224693lbs;
+        Wed, 27 Feb 2013 17:58:42 -0800 (PST)
+X-Received: by 10.229.179.72 with SMTP id bp8mr1649069qcb.5.1362016721837;
+        Wed, 27 Feb 2013 17:58:41 -0800 (PST)
+Return-Path: <mail263@em018.mktomail.com>
+Received: from em-iadsm1-3.mktomail.com (em-iadsm1-3.mktomail.com. [199.15.214.3])
+        by mx.google.com with ESMTP id t7si7658588qav.9.2013.02.27.17.58.38;
+        Wed, 27 Feb 2013 17:58:41 -0800 (PST)
+Received-SPF: pass (google.com: domain of mail263@em018.mktomail.com designates 199.15.214.3 as permitted sender) client-ip=199.15.214.3;
+Received: from mktomail.com ([172.23.11.130])
+	by em-iadsm1-3.mktomail.com (StrongMail Enterprise 4.1.1.6(4.1.1.6-56715)); Wed, 27 Feb 2013 19:58:34 -0600
+X-VirtualServer: vsg018, em-iadsm1-3.mktomail.com, 172.23.11.3
+X-VirtualServerGroup: vsg018
+X-MailingID: 1265496023::yammerBetacust-2141-6362-0-2625-prod-4048::4048::0::8148229-1::72866
+X-SMHeaderMap: mid="X-MailingID"
+X-Destination-ID: sagar@delostechnologies.com
+X-SMFBL: c2FnYXJAZGVsb3N0ZWNobm9sb2dpZXMuY29t
+Content-Transfer-Encoding: 7bit
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_AEA6_74B0DC51.19495CFF"
+X-Report-Abuse: Please report abuse here: http://www.marketo.com/policy
+Reply-To: 
+MIME-Version: 1.0
+Message-ID: <1265496023.72866@yammer-inc.com>
+Subject: Be productive anywhere with Yammer for mobile!
+Date: Wed, 27 Feb 2013 19:58:34 -0600
+To: sagar@delostechnologies.com
+From: "Yammer" <noreply@yammer-inc.com>
+X-Gm-Message-State: ALoCoQmrWFyn+YJYBR8BdFoUfBVqmd1OGmF2fXeAVVUkwnQ6gvm6guKmjjT7LmryuaiedIgpLLLH
+
+
+------=_NextPart_001_AEA6_74B0DC51.19495CFF
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<http://www.yammer.com>
+
+
+ <https://sites.yammer.com/devices>
+
+
+ 
+ Hello Sagar,
+ 
+ Today's workplace is mobile â€” in coffee shops, on park benches, at bus stops, and more. Yammer for Mobile helps you get your work done anywhere and at any time, by connecting you with the people and information you need to be productive.
+ 
+ GET YAMMER ON YOUR MOBILE DEVICE TODAY! <https://sites.yammer.com/devices>
+
+
+Yammer
+ 1355 Market Street Suite 300
+ San Francisco, CA 94103 San Francisco, CA 94103
+ 
+ Don't want follower email updates? Change settings. <https://www.yammer.com/account/notifications>
+ 
+
+ <http://www.yammer.com>
+
+<div style="text-align: center">If you no longer wish to receive these types of emails, click the following link to unsubscribe: http://marketing.yammer.com/UnsubscribePage.html?mkt_unsubscribe=1&mkt_tok=3RkMMJWWfF9wsRokuqjIZKXonjHpfsXw6uglW6W%2FlMI%2F0ER3fOvrPUfGjI4DSsBnI%2FqLAzICFpZo2FFBG%2B2YeZI%3D.</div>
+
+
+------=_NextPart_001_AEA6_74B0DC51.19495CFF
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head>
+<title>Be productive anywhere with Yammer for mobile!</title>
+</head>
+<body ><div ><div class="mktEditable" ><table border="0" cellspacing="0" cellpadding="0" width="640" bgcolor="#DDDDDD">
+<tbody>
+<tr>
+<td colspan="3" height="20"></td>
+</tr>
+<tr>
+<td width="20"></td>
+<td>
+<table style="font-family: sans-serif;" border="0" cellspacing="0" cellpadding="0" width="600" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td height="54" align="right"><a href=
+"http://mkto-g0116.com/track?type=click&enid=bWFpbGluZ2lkPXlhbW1lckJldGFjdXN0LTIxNDEtNjM2Mi0wLTI2MjUtcHJvZC00MDQ4Jm1lc3NhZ2VpZD0wJmRhdGFiYXNlaWQ9NDA0OCZzZXJpYWw9MTI2NTQ5NjAyMyZlbWFpbGlkPXNhZ2FyQGRlbG9zdGVjaG5vbG9naWVzLmNvbSZ1c2VyaWQ9ODE0ODIyOS0xJmV4dHJhPSYmJg==&&&http://www.yammer.com?mkt_tok=3RkMMJWWfF9wsRokuqjIZKXonjHpfsXw6uglW6W%2FlMI%2F0ER3fOvrPUfGjI4DSsBnI%2FqLAzICFpZo2FFBG%2B2YeZI%3D"
+><img style="display: block;" src="http://marketing.yammer.com/rs/yammer/images/devices-logo-top.gif" border="0" alt="yammer" width="118" height="53" /></a></td>
+</tr>
+<tr>
+<td style="font-size: 20px; color: #ffffff;" bgcolor="#3386AF"><a href=
+"http://mkto-g0116.com/track?type=click&enid=bWFpbGluZ2lkPXlhbW1lckJldGFjdXN0LTIxNDEtNjM2Mi0wLTI2MjUtcHJvZC00MDQ4Jm1lc3NhZ2VpZD0wJmRhdGFiYXNlaWQ9NDA0OCZzZXJpYWw9MTI2NTQ5NjAyMyZlbWFpbGlkPXNhZ2FyQGRlbG9zdGVjaG5vbG9naWVzLmNvbSZ1c2VyaWQ9ODE0ODIyOS0xJmV4dHJhPSYmJg==&&&https://sites.yammer.com/devices?mkt_tok=3RkMMJWWfF9wsRokuqjIZKXonjHpfsXw6uglW6W%2FlMI%2F0ER3fOvrPUfGjI4DSsBnI%2FqLAzICFpZo2FFBG%2B2YeZI%3D"
+><img style="color: #fff; display: block;" src="http://marketing.yammer.com/rs/yammer/images/devices-one-banner.gif" border="0" alt="BE PRODUCTIVE ANYWHERE WITH YAMMER FOR MOBILE" width="600" height="216" /></a></td>
+</tr>
+<tr>
+<td style="color: #666666;">
+<table border="0" cellspacing="0" cellpadding="0" width="600">
+<tbody>
+<tr>
+<td width="35"></td>
+<td style="color: #666666; font-size: 14px; line-height: 21px;"><br /> <br /> Hello Sagar,<br /> <br /> Today's workplace is mobile &mdash; in coffee shops, on park benches, at bus stops, and more. Yammer for Mobile helps you get your work done anywhere and at any time, by connecting you with the people and information you need to be productive.<br /> <br /> <a style="color: #008fd5;" href=
+"http://mkto-g0116.com/track?type=click&enid=bWFpbGluZ2lkPXlhbW1lckJldGFjdXN0LTIxNDEtNjM2Mi0wLTI2MjUtcHJvZC00MDQ4Jm1lc3NhZ2VpZD0wJmRhdGFiYXNlaWQ9NDA0OCZzZXJpYWw9MTI2NTQ5NjAyMyZlbWFpbGlkPXNhZ2FyQGRlbG9zdGVjaG5vbG9naWVzLmNvbSZ1c2VyaWQ9ODE0ODIyOS0xJmV4dHJhPSYmJg==&&&https://sites.yammer.com/devices?mkt_tok=3RkMMJWWfF9wsRokuqjIZKXonjHpfsXw6uglW6W%2FlMI%2F0ER3fOvrPUfGjI4DSsBnI%2FqLAzICFpZo2FFBG%2B2YeZI%3D"
+>GET YAMMER ON YOUR MOBILE DEVICE TODAY!</a><br /> <br /> <br /> <br /></td>
+<td width="35"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" width="600" bgcolor="#DDDDDD">
+<tbody>
+<tr>
+<td colspan="3" height="18"></td>
+</tr>
+<tr>
+<td width="10"></td>
+<td style="color: #999999; font-size: 10px;" width="470">Yammer<br /> 1355 Market Street Suite 300<br /> San Francisco, CA 94103 San Francisco, CA 94103<br /> <br /> Don't want follower email updates? <a style="text-decoration: none; color: #1965a5;" href=
+"http://mkto-g0116.com/track?type=click&enid=bWFpbGluZ2lkPXlhbW1lckJldGFjdXN0LTIxNDEtNjM2Mi0wLTI2MjUtcHJvZC00MDQ4Jm1lc3NhZ2VpZD0wJmRhdGFiYXNlaWQ9NDA0OCZzZXJpYWw9MTI2NTQ5NjAyMyZlbWFpbGlkPXNhZ2FyQGRlbG9zdGVjaG5vbG9naWVzLmNvbSZ1c2VyaWQ9ODE0ODIyOS0xJmV4dHJhPSYmJg==&&&https://www.yammer.com/account/notifications?mkt_tok=3RkMMJWWfF9wsRokuqjIZKXonjHpfsXw6uglW6W%2FlMI%2F0ER3fOvrPUfGjI4DSsBnI%2FqLAzICFpZo2FFBG%2B2YeZI%3D"
+>Change settings.</a><br /> <br /></td>
+<td width="120" align="right" valign="top"><a href=
+"http://mkto-g0116.com/track?type=click&enid=bWFpbGluZ2lkPXlhbW1lckJldGFjdXN0LTIxNDEtNjM2Mi0wLTI2MjUtcHJvZC00MDQ4Jm1lc3NhZ2VpZD0wJmRhdGFiYXNlaWQ9NDA0OCZzZXJpYWw9MTI2NTQ5NjAyMyZlbWFpbGlkPXNhZ2FyQGRlbG9zdGVjaG5vbG9naWVzLmNvbSZ1c2VyaWQ9ODE0ODIyOS0xJmV4dHJhPSYmJg==&&&http://www.yammer.com?mkt_tok=3RkMMJWWfF9wsRokuqjIZKXonjHpfsXw6uglW6W%2FlMI%2F0ER3fOvrPUfGjI4DSsBnI%2FqLAzICFpZo2FFBG%2B2YeZI%3D"
+><img style="display: block;" src="http://marketing.yammer.com/rs/yammer/images/devices-logo-bottom.gif" border="0" alt="yammer" width="116" height="28" /></a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width="20"></td>
+</tr>
+<tr>
+<td colspan="3" height="20"></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<IMG SRC="http://mkto-g0116.com/track?enid=bWFpbGluZ2lkPXlhbW1lckJldGFjdXN0LTIxNDEtNjM2Mi0wLTI2MjUtcHJvZC00MDQ4Jm1lc3NhZ2VpZD0wJmRhdGFiYXNlaWQ9NDA0OCZ0eXBlPW9wZW4mc2VyaWFsPTEyNjU0OTYwMjMmZW1haWxpZD1zYWdhckBkZWxvc3RlY2hub2xvZ2llcy5jb20mdXNlcmlkPTgxNDgyMjktMSZleHRyYT0mJiY=" WIDTH="1" HEIGHT="1" BORDER="0" />
+
+<div style="text-align: center"><p><font face="Arial" size="1">If you no longer wish to receive these types of emails, click here to <a href="http://marketing.yammer.com/UnsubscribePage.html?mkt_unsubscribe=1&mkt_tok=3RkMMJWWfF9wsRokuqjIZKXonjHpfsXw6uglW6W%2FlMI%2F0ER3fOvrPUfGjI4DSsBnI%2FqLAzICFpZo2FFBG%2B2YeZI%3D">Unsubscribe</a><br/> </font> </p></div>
+</body>
+</html>
+
+------=_NextPart_001_AEA6_74B0DC51.19495CFF--
+
