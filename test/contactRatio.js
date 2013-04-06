@@ -60,7 +60,7 @@ var run = function() {
             data[contactEmail] = {
                 sent: 0
               , coreceive: 0
-              , recieve: 0
+              , receive: 0
             }  
           }
           data[contactEmail]['sent'] = sentAndCoReceive.value.sent;
@@ -89,8 +89,8 @@ var checkData = function(data) {
   async.each(dataKeys, function(key, eachCallback) {
     var datum = data[key];
 
-    var numerator = datum['sent'];
-    var denominator = datum['recieve'];
+    var numerator = datum['sent'] + datum['coreceive'];
+    var denominator = datum['receive'];
 
     var ratio = 0;
     if ( denominator ) {
@@ -101,8 +101,8 @@ var checkData = function(data) {
         email: key
       , ratio: ratio
       , sent: datum.sent
-      , coreceive: datum.corecieve
-      , receive: datum.recieve
+      , coreceive: datum.coreceive
+      , receive: datum.receive
     }
     ratioData.push(ratioDatum);
     eachCallback();
