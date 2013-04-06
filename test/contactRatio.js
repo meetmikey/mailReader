@@ -17,11 +17,11 @@ var run = function() {
 
   var data = {};
 
-  //var receiveFile = './data/jdReceive.json';
-  //var sentAndCoReceiveFile = './data/jdSentAndCoReceive.json';
-  
-  var receiveFile = './data/sagarReceive.json';
-  var sentAndCoReceiveFile = './data/sagarSentAndCoReceive.json';
+  var receiveFile = './data/jdReceive.json';
+  var sentAndCoReceiveFile = './data/jdSentAndCoReceive.json';
+
+  //var receiveFile = './data/sagarReceive.json';
+  //var sentAndCoReceiveFile = './data/sagarSentAndCoReceive.json';
 
   var receiveData = fs.readFileSync(receiveFile).toString();
   var sentAndCoReceiveData = fs.readFileSync(sentAndCoReceiveFile).toString();
@@ -92,8 +92,17 @@ var checkData = function(data) {
   async.each(dataKeys, function(key, eachCallback) {
     var datum = data[key];
 
-    var numerator = datum['sent'] + datum['coreceive'];
-    var denominator = datum['receive'];
+    var sent = datum['sent'];
+    var coreceive = datum['coreceive'];
+    var receive = datum['receive'];
+
+    var numerator = sent + coreceive;
+    var denominator = receive;
+
+    if ( ( sent + coreceive > 20 )
+        && receive > 10 ) {
+      //winston.doInfo('good', {email:key});
+    }
 
     var ratio = 0;
     if ( denominator ) {
@@ -103,9 +112,9 @@ var checkData = function(data) {
     var ratioDatum = {
         email: key
       , ratio: ratio
-      , sent: datum.sent
-      , coreceive: datum.coreceive
-      , receive: datum.receive
+      , sent: sent
+      , coreceive: coreceive
+      , receive: receive
     }
     ratioData.push(ratioDatum);
     eachCallback();
