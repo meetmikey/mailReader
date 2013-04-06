@@ -17,8 +17,11 @@ var run = function() {
 
   var data = {};
 
-  var receiveFile = './data/jdReceive.json';
-  var sentAndCoReceiveFile = './data/jdSentAndCoReceive.json';
+  //var receiveFile = './data/jdReceive.json';
+  //var sentAndCoReceiveFile = './data/jdSentAndCoReceive.json';
+  
+  var receiveFile = './data/sagarReceive.json';
+  var sentAndCoReceiveFile = './data/sagarSentAndCoReceive.json';
 
   var receiveData = fs.readFileSync(receiveFile).toString();
   var sentAndCoReceiveData = fs.readFileSync(sentAndCoReceiveFile).toString();
