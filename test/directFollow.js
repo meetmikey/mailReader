@@ -39,12 +39,14 @@ linkInfo = {
 
 linkInfo = {
   "_id" : "5146d0824e03984f34a8f3a3",
-  "comparableURL" : "files.crowdspring.com/entry/3761789_1309898473189053.jpg?awsaccesskeyid=akiai3lsg4zvtvqpowjq&amp;expires=1312848000&amp;signature=xp%2ftixzoheenibgu%2f2w0rybenw4%3d",
+  "comparableURL" : "http://www.quora.com/Why-did-Flickr-miss-the-mobile-photo-opportunity-that-Instagram-and-picplz-are-pursuing",
   "comparableURLHash" : "2d6e1c1849278f277ae0667d4270ccb4a253d26876cf085857e66eb1f39c2c7d",
   "followType" : "fail",
   "lastFollowDate" : "2013-03-18T08:29:54.966Z",
-  "rawURL" : "http://files.crowdspring.com/entry/3761789_1309898473189053.jpg?AWSAccessKeyId=AKIAI3LSG4ZVTVQPOWJQ&amp;Expires=1312848000&amp;Signature=xP%2FtIxZohEENiBGu%2F2w0RYBeNW4%3D"
+  "rawURL" : "http://www.quora.com/Why-did-Flickr-miss-the-mobile-photo-opportunity-that-Instagram-and-picplz-are-pursuing"
 }
+
+
 
 
 linkHandler.followLinkDirectly (linkInfo, function (err, html, mimeType) {
