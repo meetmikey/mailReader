@@ -83,6 +83,8 @@ var urlFilterText = [
   , 'avis.com'
   , 'aavacations.com'
   , 'office.trapeze.com'
+  , 'spiritairlines.com'
+  , 'email.geico.com'
   , 'hotmail.com'
   , 'dealersocket.com'
   , 'airbnb.com'
@@ -106,6 +108,9 @@ var urlFilterText = [
   , '.gif'
   , '.png'
   , '.jpeg'
+  , '.wmv'
+  , 'client.ideo.com'
+  , 'local.vipecloud.com'
 ];
 
 define('STREAM_ATTACHMENTS', true);
