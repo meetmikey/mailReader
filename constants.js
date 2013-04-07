@@ -97,6 +97,15 @@ var urlFilterText = [
   , 'app.asana.com'
   , 'sendgrid'
   , 'abuse'
+  , 'thepiratebay'
+  , 'links.mkt2713.com'
+  , 'herokuapp.com'
+  , 'supershuttle.com'
+  , '.aspx'
+  , '.jpg'
+  , '.gif'
+  , '.png'
+  , '.jpeg'
 ];
 
 define('STREAM_ATTACHMENTS', true);

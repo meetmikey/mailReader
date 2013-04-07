@@ -2,6 +2,9 @@ COM
 CO
 INFO
 ORG
+UK
+IO
+EDU
 NET
 AC
 AD
@@ -71,7 +74,6 @@ DM
 DO
 DZ
 EC
-EDU
 EE
 EG
 ER
@@ -110,13 +112,11 @@ HN
 HR
 HT
 HU
-ID
 IE
 IL
 IM
 IN
 INT
-IO
 IQ
 IR
 IS
@@ -202,7 +202,6 @@ PRO
 PS
 PT
 PW
-PY
 QA
 RE
 RO
@@ -251,7 +250,6 @@ TW
 TZ
 UA
 UG
-UK
 US
 UY
 UZ
@@ -264,7 +262,6 @@ VN
 VU
 WF
 WS
-XXX
 YE
 YT
 ZA
