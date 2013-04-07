@@ -109,7 +109,7 @@ var urlFilterText = [
   , '.png'
   , '.jpeg'
   , '.wmv'
-  , 'client.ideo.com'
+  , 'ideo.com'
   , 'local.vipecloud.com'
 ];
 
