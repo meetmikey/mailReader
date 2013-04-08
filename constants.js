@@ -110,6 +110,7 @@ var urlFilterText = [
   , '.png'
   , '.jpeg'
   , '.wmv'
+  , 'indinero.com'
   , 'ideo.com'
   , 'local.vipecloud.com'
 ];
