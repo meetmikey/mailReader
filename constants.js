@@ -105,7 +105,6 @@ var urlFilterText = [
   , 'links.mkt2713.com'
   , 'herokuapp.com'
   , 'supershuttle.com'
-  , '.aspx'
   , '.jpg'
   , '.gif'
   , '.png'
