@@ -117,6 +117,7 @@ var urlFilterText = [
   , 'indinero.com'
   , 'ideo.com'
   , 'local.vipecloud.com'
+  , 'craigslist.org/mf'
 ];
 
 define('STREAM_ATTACHMENTS', true);
