@@ -114,15 +114,18 @@ var urlFilterText = [
   , '.png'
   , '.jpeg'
   , '.wmv'
+  , 'indinero.com'
   , 'ideo.com'
+  , 'opentable.com'
   , 'local.vipecloud.com'
+  , 'craigslist.org/mf'
 ];
 
 define('STREAM_ATTACHMENTS', true);
 
 define('MAX_WORKERS', 15);
 
-define ('MIN_SENT_AND_CORECEIVE', 3);
+define ('MIN_SENT_AND_CORECEIVE', 2);
 
 define('WORKER_TIMEOUT', 5*60*1000);
 
@@ -136,4 +139,4 @@ define('LINK_SUMMARY_CUTOFF', 300);
 
 define('MAX_DUPLICATE_LINKS_FOR_USER', 4);
 
-define ('MAX_HTML_TAGS', 15);
+define ('MAX_HTML_TAGS', 20);
