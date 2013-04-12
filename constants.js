@@ -49,7 +49,6 @@ var urlFilterText = [
   , 'salesforce.com'
   , 'okcupid.com'
   , 'newrelic.com'
-  , 'doodle.com'
   , 'feedburner.com'
   , 'joingrouper.com'
   , 'toutapp.com'
