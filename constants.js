@@ -116,6 +116,7 @@ var urlFilterText = [
   , '.wmv'
   , 'indinero.com'
   , 'ideo.com'
+  , 'opentable.com'
   , 'local.vipecloud.com'
   , 'craigslist.org/mf'
 ];
@@ -124,7 +125,7 @@ define('STREAM_ATTACHMENTS', true);
 
 define('MAX_WORKERS', 15);
 
-define ('MIN_SENT_AND_CORECEIVE', 3);
+define ('MIN_SENT_AND_CORECEIVE', 2);
 
 define('WORKER_TIMEOUT', 5*60*1000);
 
