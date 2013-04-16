@@ -4,7 +4,7 @@ var linkHandler = require ('../lib/linkHandler')
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , LinkInfoModel = require(serverCommon + '/schema/linkInfo').LinkInfoModel
 
-var url = 'https://www.newschallenge.org/open/open-government/submission/socialkit-start-your-social-venture/';
+var url = 'http://goo.gl/maps/FRUzo';
 var userId = '516c68e0645cc4f018000005';
 var linkInfo = new LinkInfoModel();
 
