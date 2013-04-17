@@ -2,7 +2,7 @@ var serverCommon = process.env.SERVER_COMMON;
 
 var fs = require('fs')
   , linkHandler = require('../../lib/linkHandler')
-  , constants = require ('../../constants')
+  , constants = require(serverCommon + '/constants')
 
 describe('extract body from html', function() {
 
