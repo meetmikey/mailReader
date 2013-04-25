@@ -125,16 +125,10 @@ define('STREAM_ATTACHMENTS', true);
 
 define('MAX_WORKERS', 15);
 
-define ('MIN_SENT_AND_CORECEIVE', 2);
-
 define('WORKER_TIMEOUT', 5*60*1000);
 
 define('MIN_IMAGE_FILE_SIZE', 10000);
 
-define('URL_FILTER_TEXT', urlFilterText);
-
 define('PDF_DOWNLOAD_TIMEOUT', 20000);
-
-define('MAX_DUPLICATE_LINKS_FOR_USER', 4);
 
 define ('MAX_HTML_TAGS', 20);
