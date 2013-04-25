@@ -104,6 +104,7 @@ var urlFilterText = [
   , 'app.asana.com'
   , 'sendgrid'
   , 'abuse'
+  , 'http://schemas.'
   , 'thepiratebay'
   , 'links.mkt2713.com'
   , 'herokuapp.com'
