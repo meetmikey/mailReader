@@ -17,4 +17,6 @@ define('MIN_IMAGE_FILE_SIZE', 10000);
 
 define('PDF_DOWNLOAD_TIMEOUT', 20000);
 
-define ('MAX_HTML_TAGS', 20);
+define ('MAX_HTML_TAGS', 30);
+
+define ('MAX_LINKS_PER_MAIL', 50);

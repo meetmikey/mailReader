@@ -1,0 +1,224 @@
+Delivered-To: idealo@gmail.com
+Received: by 10.239.174.10 with SMTP id h10cs155375hbf;
+        Fri, 4 Jun 2010 11:07:14 -0700 (PDT)
+Received: by 10.204.134.133 with SMTP id j5mr3830677bkt.159.1275674833269;
+        Fri, 04 Jun 2010 11:07:13 -0700 (PDT)
+Return-Path: <rbosch@jagd1.de>
+Received: from mail.idealo.de (mail.idealo.de [195.227.135.252])
+        by mx.google.com with ESMTP id u13si3903044bkz.10.2010.06.04.11.07.12;
+        Fri, 04 Jun 2010 11:07:13 -0700 (PDT)
+Received-SPF: neutral (google.com: 195.227.135.252 is neither permitted nor denied by best guess record for domain of rbosch@jagd1.de) client-ip=195.227.135.252;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 195.227.135.252 is neither permitted nor denied by best guess record for domain of rbosch@jagd1.de) smtp.mail=rbosch@jagd1.de
+Received: (qmail 9573 invoked from network); 4 Jun 2010 18:07:08 -0000
+Received: from ds0201.dealdomain (HELO mail.idealo.de) (192.168.0.201)
+  by mail.idealo.de with ESMTP; 4 Jun 2010 18:07:08 -0000
+Received: (qmail 9451 invoked by uid 89); 4 Jun 2010 20:07:12 +0200
+Delivered-To: martin.sinner@idealo.de
+Received: (qmail 9443 invoked by uid 89); 4 Jun 2010 20:07:12 +0200
+Delivered-To: idealo.de-martin@idealo.de
+Received: (qmail 9441 invoked by uid 89); 4 Jun 2010 20:07:12 +0200
+X-Originating-IP: 192.168.0.101
+Received: from unknown (192.168.0.101)
+  by mail.idealo.de with QMTP; 4 Jun 2010 20:07:12 +0200
+Received: (qmail 9569 invoked by uid 89); 4 Jun 2010 18:07:08 -0000
+X-Spam-Checker-Version: SpamAssassin 3.2.5
+X-Spam-Status: No, hits=-2.5 required=5.0 bayes=0.0001 tests=aBAYES_00=-2.599,
+	HTML_MESSAGE=0.001,RDNS_NONE=0.1 version=3.2.5
+Received: from unknown (HELO mo-p01-ob.rzone.de) (81.169.146.166)
+  by mail.idealo.de with ESMTP; 4 Jun 2010 18:07:07 -0000
+X-RZG-AUTH: :Pm4LZkOgW/WenqnM2U+DqJo/uHm8mnWPa54ck6l1AZmSGtkSKx6Dk+c=
+X-RZG-CLASS-ID: mo01
+Received: from robertboschPC (p54BE7237.dip.t-dialin.net [84.190.114.55])
+	by post.strato.de (fruni mo17) (RZmta 23.2)
+	with ESMTP id w04c0am54GaC9s for <martin@idealo.de>;
+	Fri, 4 Jun 2010 20:07:10 +0200 (MEST)
+From: "Robert Bosch Jagd1.de" <rbosch@jagd1.de>
+To: <martin@idealo.de>
+Subject: Google Analytics
+Date: Fri, 4 Jun 2010 20:06:57 +0200
+Message-ID: <000601cb0410$be3bf7a0$3ab3e6e0$@de>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0007_01CB0421.81C4C7A0"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AcsD/d1eAxk1LBrLShOyI+x6XF/1eQ==
+Content-Language: de
+
+Dies ist eine mehrteilige Nachricht im MIME-Format.
+
+------=_NextPart_000_0007_01CB0421.81C4C7A0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Martin, danke f=FCrs kurze dr=FCberschauen=85eine Frage: bei =
+Analystics zeigt
+es gar keine Zugriffe auf den Blog jetzt an=85dauert das immer ein wenig =
+oder
+habe ich ein Problem? Danke f=FCr einmal kurz reinschauen
+
+Robert
+
+=20
+
+Login: rbosch@jagd1.de
+
+PW: goldfinger
+
+=20
+
+=20
+
+Mit freundlichen Gr=FC=DFen
+
+=20
+
+Robert Bosch
+
+=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85=85.=
+
+
+Agentur Topjagd =96  <http://www.jagd1.de> www.jagd1.de Erste Adresse =
+f=FCr Jagd
+
+Robert Bosch
+
+Eichenallee 25
+
+D-14050 Berlin
+
+Telefon:  0178-8555144
+
+Telefax:  030-30839988
+
+Email:  <mailto:rbosch@jagd1.de> rbosch@jagd1.de
+
+=20
+
+
+------=_NextPart_000_0007_01CB0421.81C4C7A0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Diso-8859-1">
+<meta name=3DGenerator content=3D"Microsoft Word 12 (filtered medium)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+span.E-MailFormatvorlage17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 2.0cm 70.85pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1" />
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DDE link=3Dblue vlink=3Dpurple>
+
+<div class=3DSection1>
+
+<p class=3DMsoNormal>Hi Martin, danke f=FCrs kurze =
+dr=FCberschauen&#8230;eine Frage:
+bei Analystics zeigt es gar keine Zugriffe auf den Blog jetzt =
+an&#8230;dauert
+das immer ein wenig oder habe ich ein Problem? Danke f=FCr einmal kurz
+reinschauen<o:p></o:p></p>
+
+<p class=3DMsoNormal>Robert<o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Login: <a =
+href=3D"mailto:rbosch@jagd1.de">rbosch@jagd1.de</a><o:p></o:p></p>
+
+<p class=3DMsoNormal>PW: goldfinger<o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Mit freundlichen Gr=FC=DFen<o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=3DMsoNormal>Robert Bosch<o:p></o:p></p>
+
+<p =
+class=3DMsoNormal>&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230=
+;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#8230;&#=
+8230;&#8230;&#8230;&#8230;&#8230;&#8230;.<o:p></o:p></p>
+
+<p class=3DMsoNormal>Agentur Topjagd &#8211; <a =
+href=3D"http://www.jagd1.de"><span
+style=3D'color:blue'>www.jagd1.de</span></a> Erste Adresse f=FCr =
+Jagd<o:p></o:p></p>
+
+<p class=3DMsoNormal>Robert Bosch<o:p></o:p></p>
+
+<p class=3DMsoNormal>Eichenallee 25<o:p></o:p></p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'>D-14050 =
+Berlin<o:p></o:p></p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'>Telefon: =
+&nbsp;0178-8555144<o:p></o:p></p>
+
+<p class=3DMsoNormal style=3D'text-align:justify'>Telefax: =
+&nbsp;030-30839988<o:p></o:p></p>
+
+<p class=3DMsoNormal>Email: <a href=3D"mailto:rbosch@jagd1.de"><span
+style=3D'color:blue'>rbosch@jagd1.de</span></a><o:p></o:p></p>
+
+<p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_000_0007_01CB0421.81C4C7A0--
+
+
