@@ -127,7 +127,7 @@ define('MAX_WORKERS', 15);
 
 define('WORKER_TIMEOUT', 5*60*1000);
 
-define('MIN_IMAGE_FILE_SIZE', 10000);
+define('MIN_IMAGE_FILE_SIZE', 15000);
 
 define('PDF_DOWNLOAD_TIMEOUT', 20000);
 
