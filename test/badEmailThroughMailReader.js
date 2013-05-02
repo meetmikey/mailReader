@@ -12,12 +12,16 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
 
 
 var badEmailTest = this;
-var azurePath = "rawEmail/516c48fae02a65774700000a/2643173-body.txt";
-var userId = "516c48fae02a65774700000a";
-var mailId = "516c52d713c0d1669f010ef2";
+var azurePath = "rawEmail/516feea3a42ae2f994000017/2643173-body.txt";
+var userId = "5181b78bade2190015000009";
+var mailId = "516feea3a42ae2f994000017";
+var emailAddress = 'justin@mikeyteam.com';
+var sender = {
+    name: 'Alexander Rives'
+  , email: 'alexrives@gmail.com'
+}
 
-var dataFilePath = './test/data/quora.txt'
-//var dataFilePath = './test/data/googleDocLinkMail.txt'
+var dataFilePath = './test/data/edcouch.txt'
 
 var initActions = [
   appInitUtils.CONNECT_MONGO
@@ -79,8 +83,8 @@ exports.uploadBadFileToAzure = function (callback) {
 
 exports.setupDatabase = function (callback) {
   var user = new UserModel ({
-    _id : "516c48fae02a65774700000a",
-    email : "sagar@mikeyteam.com"
+    _id : userId,
+    email : emailAddress
   })
 
   user.save (function (err) {
@@ -90,11 +94,12 @@ exports.setupDatabase = function (callback) {
     }
 
     var mail = new MailModel ({
-      '_id' : mailId,
-      'userId' : userId,
-      sentDate : Date.now (),
-      uid : 123,
-      gmThreadId : '1908308240'
+        '_id' : mailId
+      , 'userId' : userId
+      , sentDate : Date.now ()
+      , uid : 123
+      , gmThreadId : '1908308240'
+      , sender: sender
     });
 
     mail.save (function (err) {
