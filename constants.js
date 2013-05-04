@@ -20,3 +20,5 @@ define('PDF_DOWNLOAD_TIMEOUT', 20000);
 define ('MAX_HTML_TAGS', 30);
 
 define ('MAX_LINKS_PER_MAIL', 300);
+
+define ('MAX_URL_LENGTH', 400);
