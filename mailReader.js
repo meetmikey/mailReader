@@ -10,6 +10,7 @@ var appInitUtils = require(serverCommon + '/lib/appInitUtils')
 var initActions = [
     appInitUtils.CONNECT_ELASTIC_SEARCH
   , appInitUtils.CONNECT_MONGO
+  //, appInitUtils.MEMWATCH_MONITOR
 ];
 
 //initApp() will not callback an error.
