@@ -7,7 +7,6 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect').mongoose
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , contactUtils = require(serverCommon + '/lib/contactUtils')
   , ReceiveMRModel = require(serverCommon + '/schema/contact').ReceiveMRModel
-  , linkHandler = require('../lib/linkHandler')
   , fs = require('fs')
 
 
@@ -17,8 +16,8 @@ var run = function() {
 
   var data = {};
 
-  var receiveFile = './data/jdReceive.json';
-  var sentAndCoReceiveFile = './data/jdSentAndCoReceive.json';
+  //var receiveFile = './data/jdReceive.json';
+  //var sentAndCoReceiveFile = './data/jdSentAndCoReceive.json';
 
   //var receiveFile = './data/sagarReceive.json';
   //var sentAndCoReceiveFile = './data/sagarSentAndCoReceive.json';
@@ -40,7 +39,7 @@ var run = function() {
       data[contactEmail] = {
           sent: 0
         , corecipient: 0
-        , receive: receive.value
+        , recipient: receive.value
       };
       eachCallback();
     }
@@ -63,7 +62,7 @@ var run = function() {
             data[contactEmail] = {
                 sent: 0
               , corecipient: 0
-              , receive: 0
+              , recipient: 0
             }  
           }
           data[contactEmail]['sent'] = sentAndCoReceive.value.sent;
@@ -95,27 +94,16 @@ var checkData = function(data) {
 
     var sent = datum['sent'];
     var corecipient = datum['corecipient'];
-    var receive = datum['receive'];
+    var recipient = datum['recipient'];
+    var ratio = getRatioFromDatum(datum);
 
-    var numerator = sent + corecipient;
-    var denominator = receive;
-
-    if ( ( sent + corecipient > 20 )
-        && receive > 10 ) {
-      //winston.doInfo('good', {email:key});
-    }
-
-    var ratio = 0;
-    if ( denominator ) {
-      ratio = numerator / denominator;
-    }
     data[key].ratio = ratio;
     var ratioDatum = {
         email: key
       , ratio: ratio
       , sent: sent
       , corecipient: corecipient
-      , receive: receive
+      , recipient: recipient
     }
     ratioData.push(ratioDatum);
     eachCallback();
@@ -137,14 +125,32 @@ var checkData = function(data) {
   });
 }
 
+var getRatioFromDatum = function(datum) {
+  var sent = datum['sent'];
+  var corecipient = datum['corecipient'];
+  var recipient = datum['recipient'];
+
+  var numerator = sent + corecipient;
+  var denominator = recipient;
+
+  var ratio = 0;
+  if ( denominator ) {
+    ratio = numerator / denominator;
+  }
+  return ratio;
+}
+
 var findBadSenders = function(data) {
   var dataKeys = Object.keys(data);
 
   async.each(dataKeys, function(key, eachCallback) {
     var datum = data[key];
-    if ( linkHander.isBadContactRatio( datum ) ) {
-      winston.doInfo('bad contact: ', {email: key, data: datum});
+    var status = 'ok';
+    var ratio = getRatioFromDatum(datum);
+    if ( contactUtils.isBadContactRatio( datum ) ) {
+      status = 'BAD!!'
     }
+    winston.doInfo('bad contact: ', {email: key, status: status, ratio: ratio, recipient: datum['recipient']});
   });
 }
 
