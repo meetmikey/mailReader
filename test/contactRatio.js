@@ -39,7 +39,7 @@ var run = function() {
     } else {
       data[contactEmail] = {
           sent: 0
-        , coreceive: 0
+        , corecipient: 0
         , receive: receive.value
       };
       eachCallback();
@@ -62,12 +62,12 @@ var run = function() {
           if ( dataKeys.indexOf( contactEmail ) === -1 ) {
             data[contactEmail] = {
                 sent: 0
-              , coreceive: 0
+              , corecipient: 0
               , receive: 0
             }  
           }
           data[contactEmail]['sent'] = sentAndCoReceive.value.sent;
-          data[contactEmail]['coreceive'] = sentAndCoReceive.value.corecipient;
+          data[contactEmail]['corecipient'] = sentAndCoReceive.value.corecipient;
           eachCallback();
         }
 
@@ -76,7 +76,8 @@ var run = function() {
           winston.handleError(err);
 
         } else {
-          checkData(data);
+          //checkData(data);
+          findBadSenders(data);
         }
       });
     }
@@ -93,13 +94,13 @@ var checkData = function(data) {
     var datum = data[key];
 
     var sent = datum['sent'];
-    var coreceive = datum['coreceive'];
+    var corecipient = datum['corecipient'];
     var receive = datum['receive'];
 
-    var numerator = sent + coreceive;
+    var numerator = sent + corecipient;
     var denominator = receive;
 
-    if ( ( sent + coreceive > 20 )
+    if ( ( sent + corecipient > 20 )
         && receive > 10 ) {
       //winston.doInfo('good', {email:key});
     }
@@ -113,7 +114,7 @@ var checkData = function(data) {
         email: key
       , ratio: ratio
       , sent: sent
-      , coreceive: coreceive
+      , corecipient: corecipient
       , receive: receive
     }
     ratioData.push(ratioDatum);
@@ -132,6 +133,17 @@ var checkData = function(data) {
         return 1;
       });
       winston.doInfo('data', {data:ratioData});
+    }
+  });
+}
+
+var findBadSenders = function(data) {
+  var dataKeys = Object.keys(data);
+
+  async.each(dataKeys, function(key, eachCallback) {
+    var datum = data[key];
+    if ( linkHander.isBadContactRatio( datum ) ) {
+      winston.doInfo('bad contact: ', {email: key, data: datum});
     }
   });
 }
