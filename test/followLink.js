@@ -10,11 +10,10 @@ var linkInfo = new LinkInfoModel();
 
 var linkInfo = {
   "_id" : "517dc7754e03984f34b6a32a",
-  "comparableURL" : "angel.co/jetlore",
+  "comparableURL" : "youtube.com/watch?v=KFriB2h03-A",
   "comparableURLHash" : "556e0991b005320cf5bc02851fafced4f258b7209bb4fefb3855a3a52fe3f711",
-  "rawURL" : "https://angel.co/jetlore"
+  "rawURL" : "http://www.youtube.com/watch?v=KFriB2h03-A"
 }
-
 
 //linkInfo.comparableURLHash = urlUtils.getComparableURLHash( url );
 //linkInfo.rawURL = url;
