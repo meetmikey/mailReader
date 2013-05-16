@@ -1,0 +1,65 @@
+Delivered-To: mengyihe@zm88.stanford.edu
+Received: by 10.66.189.199 with SMTP id gk7csp113649pac;
+        Tue, 6 Nov 2012 11:50:42 -0800 (PST)
+Received: by 10.68.222.37 with SMTP id qj5mr6303931pbc.132.1352231442788;
+        Tue, 06 Nov 2012 11:50:42 -0800 (PST)
+Return-Path: <postmaster@coursework.stanford.edu>
+Received: from smtp.stanford.edu (smtp3.Stanford.EDU. [171.67.219.83])
+        by mx.google.com with ESMTPS id h9si28632255paw.279.2012.11.06.11.50.42
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Tue, 06 Nov 2012 11:50:42 -0800 (PST)
+Received-SPF: pass (google.com: domain of postmaster@coursework.stanford.edu designates 171.67.219.83 as permitted sender) client-ip=171.67.219.83;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of postmaster@coursework.stanford.edu designates 171.67.219.83 as permitted sender) smtp.mail=postmaster@coursework.stanford.edu
+Received: from smtp.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id DAED545D8C3;
+	Tue,  6 Nov 2012 11:50:41 -0800 (PST)
+Received: from coursework-bo3.stanford.edu (coursework-bo3.Stanford.EDU [171.67.35.27])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by smtp.stanford.edu (Postfix) with ESMTPS id 2BF8C45CDBE;
+	Tue,  6 Nov 2012 11:50:41 -0800 (PST)
+Received: from coursework-bo3.stanford.edu (localhost.localdomain [127.0.0.1])
+	by coursework-bo3.stanford.edu (Postfix) with ESMTP id 0FD5E1B5E43;
+	Tue,  6 Nov 2012 11:50:41 -0800 (PST)
+Message-ID: <1642165048.1352231440917.JavaMail.tomcat@coursework-bo3.stanford.edu>
+Date: Tue, 6 Nov 2012 11:50:40 -0800 (PST)
+Subject: [ F12-STRAMGT-353-01 - New Content ] Veritas Software handouts.pdf
+Mime-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_0_180794353.1352231440856"
+From: "Rochelle Bagalso" <bagalso_rochelle@gsb.stanford.edu>
+To: "F12-STRAMGT-353-01"<no-reply@coursework.stanford.edu>
+
+------=_Part_0_180794353.1352231440856
+Content-Type: text/plain ; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+
+
+A new content item has been added to the "F12-STRAMGT-353-01" site at Coursework 5 (https://coursework.stanford.edu/portal)
+
+Location: site "F12-STRAMGT-353-01" > Materials   > Veritas Software handouts.pdf
+
+
+Materials: Veritas Software handouts.pdf https://coursework.stanford.edu/access/content/group/F12-STRAMGT-353-01/Veritas%20Software%20handouts.pdf
+
+----------------------
+This automatic notification message was sent by Coursework 5 (https://coursework.stanford.edu/portal) from the F12-STRAMGT-353-01 site.
+You can modify how you receive notifications at My Workspace > Preferences.
+
+------=_Part_0_180794353.1352231440856
+Content-Type: text/html ; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>  <head><title>[ F12-STRAMGT-353-01 - New Content ] Veritas Software handouts.pdf</title></head>  <body><p>A new content item has been added to the "F12-STRAMGT-353-01" site at <a href="https://coursework.stanford.edu/portal">Coursework 5</a>
+</p><p>
+Location: site "F12-STRAMGT-353-01" > Materials   > <a href="https://coursework.stanford.edu/access/content/group/F12-STRAMGT-353-01/Veritas%20Software%20handouts.pdf">Veritas Software handouts.pdf</a>
+</p><p>
+<hr/><br/>
+This automatic notification message was sent by Coursework 5 (<a href="https://coursework.stanford.edu/portal" >https://coursework.stanford.edu/portal</a>) from the F12-STRAMGT-353-01 site.<br/>
+You can modify how you receive notifications at My Workspace > Preferences.</p>  </body></html>
+
+------=_Part_0_180794353.1352231440856--
+

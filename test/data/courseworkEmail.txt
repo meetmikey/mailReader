@@ -1,0 +1,97 @@
+                                                                                                                                                                                                                                                               
+Delivered-To: jdurack@zm88.stanford.edu
+Received: by 10.220.155.4 with SMTP id q4csp40622vcw;
+        Fri, 20 Apr 2012 13:30:37 -0700 (PDT)
+Received: by 10.68.226.5 with SMTP id ro5mr11110964pbc.74.1334953836515;
+        Fri, 20 Apr 2012 13:30:36 -0700 (PDT)
+Return-Path: <postmaster@coursework.stanford.edu>
+Received: from smtp.stanford.edu (smtp3.Stanford.EDU. [171.67.219.83])
+        by mx.google.com with ESMTPS id s4si7638913pbc.75.2012.04.20.13.30.34
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 20 Apr 2012 13:30:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of postmaster@coursework.stanford.edu designates 171.67.219.83 as permitted sender) client-ip=171.67.219.83;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of postmaster@coursework.stanford.edu designates 171.67.219.83 as permitted sender) smtp.mail=postmaster@coursework.stanford.edu
+Received: from smtp.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 3AD9A4444E6;
+	Fri, 20 Apr 2012 13:30:34 -0700 (PDT)
+Received: from coursework-bo3.stanford.edu (coursework-bo3.Stanford.EDU [171.67.35.27])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by smtp.stanford.edu (Postfix) with ESMTPS id 557324444E8;
+	Fri, 20 Apr 2012 13:30:32 -0700 (PDT)
+Received: from coursework-bo3.stanford.edu (localhost.localdomain [127.0.0.1])
+	by coursework-bo3.stanford.edu (Postfix) with ESMTP id 0F1D01B5C70;
+	Fri, 20 Apr 2012 13:30:32 -0700 (PDT)
+Message-ID: <389152036.1334953831685.JavaMail.tomcat@coursework-bo3.stanford.edu>
+Date: Fri, 20 Apr 2012 13:30:31 -0700 (PDT)
+Subject: Homework scores
+Mime-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="obama"
+From: "Coursework 5" <no-reply@coursework.stanford.edu>
+To: "Sp12-MGTECON-300-01/02"<no-reply@coursework.stanford.edu>
+
+obama
+Content-Type: text/plain ; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+
+An announcement has been updated in the "Sp12-MGTECON-300-01/02 Growth and =
+Stabilization in the Global Economy" site at Coursework 5 (https://coursewo=
+rk.stanford.edu/portal/site/Sp12-MGTECON-300-01_Sp12-MGTECON-300-02)
+
+
+Subject: Homework scores
+
+From: Chad Jones
+
+Date: Apr 20, 2012 1:30 pm
+
+Message:=20
+
+Hi Class,
+
+Just a quick note on grading. =A0I grade the homework assignments on a "che=
+ck plus", "check", "check minus" scale. =A0The majority of students receive=
+ the middle grade; you have to do an exceptional job in general to get the =
+top grade.
+
+Have a nice weekend,
+
+Chad
+
+----------------------
+This automatic notification message was sent by Coursework 5 (https://cours=
+ework.stanford.edu/portal) from the Sp12-MGTECON-300-01/02 site.
+You can modify how you receive notifications at My Workspace > Preferences.
+
+obama
+Content-Type: text/html ; charset=iso-8859-1
+Content-Transfer-Encoding: 7bit
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>  <head><title>Homework scores</title></head>  <body>An announcement has been updated in the "Sp12-MGTECON-300-01/02 Growth and Stabilization in the Global Economy" site at Coursework 5 (<a href="https://coursework.stanford.edu/portal/site/Sp12-MGTECON-300-01_Sp12-MGTECON-300-02">https://coursework.stanford.edu/portal/site/Sp12-MGTECON-300-01_Sp12-MGTECON-300-02</a>)<br />
+<br />
+<br />
+Subject: Homework scores<br />
+<br />
+From: Chad Jones<br />
+<br />
+Date: Apr 20, 2012 1:30 pm<br />
+<br />
+Message: <br />
+<br />
+Hi Class,<br/>
+<br/>
+Just a quick note on grading. &nbsp;I grade the homework assignments on a &quot;check plus&quot;, &quot;check&quot;, &quot;check minus&quot; scale. &nbsp;The majority of students receive the middle grade; you have to do an exceptional job in general to get the top grade.<br/>
+<br/>
+Have a nice weekend,<br/>
+<br/>
+Chad<br/><br />
+<br />
+<hr/><br/>This automatic notification message was sent by Coursework 5 (<a href="https://coursework.stanford.edu/portal">https://coursework.stanford.edu/portal</a>) from the Sp12-MGTECON-300-01/02 site.<br/>You can modify how you receive notifications at My Workspace > Preferences.<br/>  </body></html>
+
+obama
+
