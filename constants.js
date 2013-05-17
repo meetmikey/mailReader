@@ -24,3 +24,5 @@ define ('MAX_LINKS_PER_MAIL', 300);
 define('MAX_DUPLICATE_LINKS_FOR_USER', 4);
 
 define ('MAX_URL_LENGTH', 400);
+
+define ('MAX_TRIES_MAILREADER', 8);
