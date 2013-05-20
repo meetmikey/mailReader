@@ -21,7 +21,7 @@ var sender = {
   , email: 'alexrives@gmail.com'
 }
 
-var dataFilePath = './test/data/cornerCaseDupeNames.txt'
+var dataFilePath = './test/data/courseworkEmail.txt'
 
 var initActions = [
   appInitUtils.CONNECT_MONGO
