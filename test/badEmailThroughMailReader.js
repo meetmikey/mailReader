@@ -21,6 +21,8 @@ var sender = {
   , email: 'alexrives@gmail.com'
 }
 
+var recipients = []
+
 var dataFilePath = './test/data/courseworkEmail.txt'
 
 var initActions = [
@@ -100,6 +102,7 @@ exports.setupDatabase = function (callback) {
       , uid : 123
       , gmThreadId : '1908308240'
       , sender: sender
+      , recipients : recipients
     });
 
     mail.save (function (err) {
