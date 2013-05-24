@@ -23,7 +23,7 @@ var sender = {
 
 var recipients = []
 
-var dataFilePath = './test/data/courseworkEmail.txt'
+var dataFilePath = './test/data/badVipe.txt'
 
 var initActions = [
   appInitUtils.CONNECT_MONGO
