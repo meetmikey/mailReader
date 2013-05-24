@@ -1,0 +1,72 @@
+Delivered-To: pablo@diazgutierrez.com
+Received: by 10.68.237.130 with SMTP id vc2csp15798pbc;
+        Mon, 19 Mar 2012 07:27:55 -0700 (PDT)
+Received: by 10.68.135.99 with SMTP id pr3mr40650367pbb.52.1332167275381;
+        Mon, 19 Mar 2012 07:27:55 -0700 (PDT)
+Return-Path: <>
+Received: from confermail.ntu.edu.sg (confermail.ntu.edu.sg. [155.69.5.218])
+        by mx.google.com with ESMTP id q7si11537271pbf.13.2012.03.19.07.27.54;
+        Mon, 19 Mar 2012 07:27:55 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of confermail.ntu.edu.sg designates 155.69.5.218 as permitted sender) client-ip=155.69.5.218;
+Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of confermail.ntu.edu.sg designates 155.69.5.218 as permitted sender) smtp.mail=
+Received: from listserv ([155.69.5.31]) by confermail.ntu.edu.sg with Microsoft SMTPSVC(5.0.2195.7381);
+	 Mon, 19 Mar 2012 22:27:53 +0800
+Date:         Mon, 19 Mar 2012 22:27:53 +0800
+From:         "Nanyang Technological University LISTSERV Server (14.4)" <LISTSERV@MLIST.NTU.EDU.SG>
+Subject: Invalid request received from you
+To:           pablo@DIAZGUTIERREZ.COM
+Message-ID:   <LISTSERV%201203192227536750.5ABC@MLIST.NTU.EDU.SG>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX"
+Return-Path: <>
+X-OriginalArrivalTime: 19 Mar 2012 14:27:53.0902 (UTC) FILETIME=[78AADCE0:01CD05DC]
+
+--ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX
+
+Your message is being returned to you unprocessed because no command was found
+in the  message body.  LISTSERV expects  commands in the  body of  the message
+rather than in the message subject because some users have no control over the
+contents of the "Subject:" field on outgoing messages.
+
+--ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX
+Content-Type: message/rfc822
+
+Return-Path: <pablo@diazgutierrez.com>
+Received: from 209.85.210.46 by MLIST.NTU.EDU.SG (SMTPL release 1.0m) with TCP; Mon, 19 Mar 2012 22:27:53 +0800
+Received: by dajr28 with SMTP id r28so9976428daj.19
+        for <LISTSERV@mlist.ntu.edu.sg>; Mon, 19 Mar 2012 07:27:52 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=content-type:mime-version:subject:from:in-reply-to:date
+         :content-transfer-encoding:message-id:references:to:x-mailer
+         :x-gm-message-state;
+        bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
+        b=j51L9PV0X0vQyLtU8S9hj+RIih57U6c8j/pC6GzbNgqhEiw2c+wVTkeLDmYna8GLn+
+         dv2FWRB9x0SPNBhkCMSVB+GiLXjsDUwbuusVx3dJiSx/AicvL5WkRFvYmzDz/5ouWVjM
+         v/BSokaPYwJF5Q5jHQXb/A/noYJuO/8XQMaEZKJiuAqMqGp6yMqG+BIi5RQ/5YCVv3H+
+         /bpfDR3tIdize5jbKjAmAfuXCkuKhCU/V0RgTYEGGLxnYv5scqGgVwr12fijCqYYTBAd
+         o5CulQsF+hqgPRslkWcqGBahjP71GmmOVsJqges3NSwwwexysJvpFrNjc/EMkofRpUVe
+         tAbg==
+Received: by 10.68.230.229 with SMTP id tb5mr41600362pbc.0.1332167272715;
+        Mon, 19 Mar 2012 07:27:52 -0700 (PDT)
+Return-Path: <pablo@diazgutierrez.com>
+Received: from [192.168.0.101] ([208.80.69.76])
+        by mx.google.com with ESMTPS id m1sm4019728pbl.39.2012.03.19.07.27.52
+        (version=SSLv3 cipher=OTHER);
+        Mon, 19 Mar 2012 07:27:52 -0700 (PDT)
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0 (Apple Message framework v1257)
+Subject: SIGNOFF CASA_2012
+From: Pablo Diaz-Gutierrez <pablo@diazgutierrez.com>
+In-Reply-To: <LISTSERV%201203192227155350.5ABB@MLIST.NTU.EDU.SG>
+Date: Mon, 19 Mar 2012 07:27:58 -0700
+Content-Transfer-Encoding: 7bit
+Message-Id: <ADCF0DB2-96A7-4F1B-B288-5DBFF849D2C1@DIAZGUTIERREZ.COM>
+References: <LISTSERV%201203192227155350.5ABB@MLIST.NTU.EDU.SG>
+To: "Nanyang Technological University LISTSERV Server (14.4)" <LISTSERV@MLIST.NTU.EDU.SG>
+X-Mailer: Apple Mail (2.1257)
+X-Gm-Message-State: ALoCoQm1A0rsMRx58/3/5sNbnaiALck1S/frnQr1uEKOaR5F8W+Dfm7G06V5To7Z3EH3fh+jSYiI
+
+
+
+--ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX--

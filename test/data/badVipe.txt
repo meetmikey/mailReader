@@ -1,0 +1,187 @@
+Delivered-To: adamjpeterson+fox15@gmail.com
+Received: by 10.76.153.97 with SMTP id vf1csp116719oab;
+        Tue, 26 Mar 2013 11:44:50 -0700 (PDT)
+X-Received: by 10.68.190.99 with SMTP id gp3mr25130954pbc.117.1364323490050;
+        Tue, 26 Mar 2013 11:44:50 -0700 (PDT)
+Return-Path: <bounces+297478-bf79-adamjpeterson+fox15=gmail.com@sendgrid.info>
+Received: from o5.b99.sendgrid.net (o5.b99.sendgrid.net. [74.63.236.162])
+        by mx.google.com with SMTP id qx5si18498257pbc.54.2013.03.26.11.44.49;
+        Tue, 26 Mar 2013 11:44:49 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+297478-bf79-adamjpeterson+fox15=gmail.com@sendgrid.info designates 74.63.236.162 as permitted sender) client-ip=74.63.236.162;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounces+297478-bf79-adamjpeterson+fox15=gmail.com@sendgrid.info designates 74.63.236.162 as permitted sender) smtp.mail=bounces+297478-bf79-adamjpeterson+fox15=gmail.com@sendgrid.info;
+       dkim=pass header.i=@sendgrid.me
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; d=sendgrid.me; h=
+	content-type:mime-version:from:to:subject; s=smtpapi; bh=J3H85mf
+	0auE7nfdQ8vRBOr9a/BI=; b=rryFTWQ66hBUjXdAkcG7Cilmx7y6zehscKF/qpm
+	D/D5oBo/tLTG5empcSNfQpA1o4HBeefY1ibSk04RSZ7Ji+FXvBDzgu84c1eXbnGk
+	qqI7TVh1kGDelxm06JSO5e5wy65v0TbiFZr9y4m5SELD/druuG9kSJtO8Ez/Rd7m
+	vT9o=
+Received: by 10.42.80.130 with SMTP id filter-064.22218.5151EC9F7
+        Tue, 26 Mar 2013 18:44:47 +0000 (UTC)
+Received: from Mjk3NDc4 (u223-083.appliedops.net [208.83.223.83])
+	by mi3.sendgrid.net (SG) with HTTP id 5151ec9f.862.940bf8
+	for <notify@vipecloud.com>; Tue, 26 Mar 2013 13:44:47 -0500 (CST)
+Content-Type: multipart/alternative;
+	boundary="===============4384172626899043066=="
+MIME-Version: 1.0
+From: VipeCloud <notify@vipecloud.com>
+To: adamjpeterson+fox15@gmail.com
+Subject: Welcome to VipeCloud Launches One-Click Post to LinkedIn
+Message-ID: <1364323488.1143343560801815@filter-064>
+Date: Tue, 26 Mar 2013 18:44:48 +0000 (UTC)
+X-SG-EID: IrF9DM74eOlD37Xasc2E3pFLzVMY0GqgaLwM8CmhlHwiMoVmRO+X2B2hrMgijM6ND8Svu3ZLA6MZItJF+DFzB7FETHgRv87VM2OFvtZEBdCR7tmT0+d0FcILy6XO11k7kFABWP837RNKBr27CwGkYQ==
+
+--===============4384172626899043066==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+
+=20=20
+=20=20=20=20
+=20=20=20=20=20=20
+        Dear Adam,
+
+VipeCloud launches One-Click Post to LinkedIn! Continually innovating ways =
+to increase your subscriber engagement, this new feature makes it ridiculou=
+sly easy for your subscribers to take a video you have "pushed" to them and=
+ post it to LinkedIn in one-click right from the email notification! To see=
+ for yourself, click the link below and post this classic Glengarry Glenros=
+s monologue with Alec Baldwin to your own LinkedIn profile. (It's the end o=
+f Q1 so it won't hurt to motivate your network with this sales speech :).
+
+Also - taking this even further - we're now giving your subscriber's valida=
+tion for their efforts. When they post a video to LinkedIn and get their fi=
+rst ever view from the social network, they will receive a view alert to le=
+t them know it's working!=20=20
+
+As always, we welcome your feedback.
+
+-Adam & the VipeCloud team, a Stanford StartX company
+=20=20=20=20=20=20
+=20=20=20=20=20=20
+=20=20=20=20=20=20
+=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                    Click here to post this video to LinkedIn in one click=
+=20
+=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20
+                    Preview your video here (before posting on LinkedIn):
+                    http://v.vipecloud.com/v/2er92wqg25
+=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20
+          The video below is already in your VipeCloud account. You can vie=
+w it in your VipeCloud libary at http://v.vipecloud.com/assets or
+          via this link:
+=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20
+                  Glengarry Glen Ross speech
+You can share this video: http://v.vipecloud.com/v/2er92wqg25
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20
+=20=20
+
+=20=20=20=20=20=20=20=20
+
+--===============4384172626899043066==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<div class=3D"container">
+  <div class=3D"row">
+    <div class=3D"span9">
+      <div class=3D"page-header">
+        <p class=3D"welcome_message">Dear Adam,<br />
+<br />
+VipeCloud launches One-Click Post to LinkedIn! Continually innovating ways =
+to increase your subscriber engagement, this new feature makes it ridiculou=
+sly easy for your subscribers to take a video you have "pushed" to them and=
+ post it to LinkedIn in <b>one-click</b> right from the email notification!=
+ To see for yourself, click the link below and post this classic Glengarry =
+Glenross monologue with Alec Baldwin to your own LinkedIn profile. (It's th=
+e end of Q1 so it won't hurt to motivate your network with this sales speec=
+h :).<br />
+<br />
+Also - taking this even further - we're now giving your subscriber's valida=
+tion for their efforts. When they post a video to LinkedIn and get their fi=
+rst ever view from the social network, they will receive a view alert to le=
+t them know it's working!  <br />
+<br />
+As always, we welcome your feedback.<br />
+<br />
+<b><i>-Adam & the VipeCloud team, a Stanford StartX company</i></b><br />
+      <br />
+      <br />
+      <br />
+      </p>
+                <p>=20
+                    <a href=3D"http://u297478.sendgrid.org/wf/click?upn=3D2=
+HSi6ihs2N0epZwigAqvKPZ50sfQMFA0jPzy0yzuDPO9EVfNYieR5XdyEnvPeaqAHyiWPuGOMbC4=
+DspJWzooF9N68WFjN1cMjFBdixZGh-2FX-2BMtvlZXxQoM72EA-2BpmtIoV9h7xmKB6HNq8uZ12=
+C29E-2FUfmXdmfvYedQl1Wi166rJkBNSecz3AXvtH6u-2B34yqLx4h88bFeBY4WumwfVhpfSvlj=
+egnRuJY5HpyEsLOeeuSer5k58SD-2Bl3mglxkRDEkz_orOm4PAfDE4d3FfgnsNF16PE3981Maqj=
+eTGsfSQ3JxHxYGzQJUN4HG3woFoJ3kSgkUIzaTDdJO-2BHoUinT77lDY3yri7nKYxpOQCzRXjXa=
+cybEwRpyExDlFImSOme0BXQUFqRx-2Fe8YSIZG6o02lEXD2rXPvEksoS-2FSXLy9r7gvy14xoyE=
+xrbWygRPZOQVrabA">Click here to post this video to LinkedIn in one click</a=
+>=20
+          <br>
+                    <a href=3D"http://u297478.sendgrid.org/wf/click?upn=3DM=
+5AzQ2BnSPX0JCDxFm8F1YZ-2BbURMTV96-2B-2BM29zV5l-2BLWV7zW312JOajJX8MHP3aO_orO=
+m4PAfDE4d3FfgnsNF16PE3981MaqjeTGsfSQ3JxHxYGzQJUN4HG3woFoJ3kSgkUIzaTDdJO-2BH=
+oUinT77lDSzROI1HdwyWJUHCDeCh6yLLPuH3kvXF7QcZYbC-2FkSvlcDayQYF8MMRKjxk-2FUNw=
+ZuMF06dY6spxb8XEh38IVto2oQDQVwLmQ0IO7lMH1Vkwh">
+            <img src=3D"http://v.vipecloud.com/thumb/2er92wqg25/share/large=
+" width=3D"320" height=3D"240">
+          </a>
+          <br>
+                    Preview your video here (before posting on LinkedIn):
+                    <a href=3D"http://u297478.sendgrid.org/wf/click?upn=3DM=
+5AzQ2BnSPX0JCDxFm8F1YZ-2BbURMTV96-2B-2BM29zV5l-2BLWV7zW312JOajJX8MHP3aO_orO=
+m4PAfDE4d3FfgnsNF16PE3981MaqjeTGsfSQ3JxHxYGzQJUN4HG3woFoJ3kSgkUIzaTDdJO-2BH=
+oUinT77lDaHfN-2F5zG6EyLmRY3kGGjEB0OV3D4a-2BT6R4YD8t4bKRp5uKzzesDnmNenFWYUzs=
+ZpHDA4Ljv4Z8g0XYD-2BEA3WfEyWcWrH2M6M-2FvJ7VmKgSHd">http://v.vipecloud.com/v=
+/2er92wqg25</a>
+        </p>
+        <p>
+          <br>
+          <b>The video below is already in your VipeCloud account.</b> You =
+can view it in your VipeCloud libary at <a href=3D"http://u297478.sendgrid.=
+org/wf/click?upn=3DM5AzQ2BnSPX0JCDxFm8F1btAipCIv6dPjdJXJbhu0NkmvNLLwr3zRqxQ=
+-2FGruiQ-2BO_orOm4PAfDE4d3FfgnsNF16PE3981MaqjeTGsfSQ3JxHxYGzQJUN4HG3woFoJ3k=
+SgkUIzaTDdJO-2BHoUinT77lDVMTQtELVEkbaJnay8TVOEf2smOH4kn4o3asbM-2F8JtISCtRYr=
+M2EqQ9BtQttwnFnpduqij41JLn8VizdwOceoXbOyDaZTFwOVQgKHb24Gsd4">http://v.vipec=
+loud.com/assets</a> or
+          via this link:
+        </p>
+        <ol>
+                  <li>Glengarry Glen Ross speech<br>
+You can share this video: <a href=3D"http://u297478.sendgrid.org/wf/click?u=
+pn=3DM5AzQ2BnSPX0JCDxFm8F1YZ-2BbURMTV96-2B-2BM29zV5l-2BLWV7zW312JOajJX8MHP3=
+aO_orOm4PAfDE4d3FfgnsNF16PE3981MaqjeTGsfSQ3JxHxYGzQJUN4HG3woFoJ3kSgkUIzaTDd=
+JO-2BHoUinT77lDeFI06xY5myyU7bO2r5J5eO501yRxcs7hJkRwZHyRVq-2FO-2FfZXrLY9vFoW=
+8Lk6cML-2FmzPI6q9kC9BqYtt7Ss6wgfZPDo0a5onWtIKicdy2ymt">http://v.vipecloud.c=
+om/v/2er92wqg25</a><br><br></li>
+                </ol>
+              </div>
+    </div><!--/span-->
+  </div><!--/row-->
+</div>
+=20=20=20=20=20=20=20=20
+<img src=3D"http://u297478.sendgrid.org/wf/open?upn=3DorOm4PAfDE4d3FfgnsNF1=
+6PE3981MaqjeTGsfSQ3JxHxYGzQJUN4HG3woFoJ3kSgkUIzaTDdJO-2BHoUinT77lDcIvH-2FTG=
+Uu96vbtsxOCRyG6aWOy66y5GuMBiOwCA6Q159VhBWbXE9pZMb0G20rD44zBphKexDOoygN0TXsQ=
+1k0GUuirdMtaoOthmobrFZAlT" alt=3D"" width=3D"1" height=3D"1" border=3D"0" s=
+tyle=3D"height:1px !important;width:1px !important;border-width:0 !importan=
+t;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !import=
+ant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !imp=
+ortant;padding-right:0 !important;padding-left:0 !important;"/>
+
+--===============4384172626899043066==--

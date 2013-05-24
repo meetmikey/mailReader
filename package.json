@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-      "mailparser": "=0.3.4"
+     "mailparser": "=0.3.6"
     , "async": "=0.2.7"
+    , "underscore" : "=1.4.4"
   },
   "scripts": {
     "start": "app.js"

@@ -21,7 +21,9 @@ var sender = {
   , email: 'alexrives@gmail.com'
 }
 
-var dataFilePath = './test/data/edcouch.txt'
+var recipients = []
+
+var dataFilePath = './test/data/badVipe.txt'
 
 var initActions = [
   appInitUtils.CONNECT_MONGO
@@ -100,6 +102,7 @@ exports.setupDatabase = function (callback) {
       , uid : 123
       , gmThreadId : '1908308240'
       , sender: sender
+      , recipients : recipients
     });
 
     mail.save (function (err) {

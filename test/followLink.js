@@ -10,9 +10,9 @@ var linkInfo = new LinkInfoModel();
 
 var linkInfo = {
   "_id" : "517dc7754e03984f34b6a32a",
-  "comparableURL" : "youtube.com/watch?v=KFriB2h03-A",
+  "comparableURL" : "haddtoany.com/email?linkurl=http://www.whyisrael.org/2012/10/16/to-counter-christian-anti-israelism-its-time-to-go-local/",
   "comparableURLHash" : "556e0991b005320cf5bc02851fafced4f258b7209bb4fefb3855a3a52fe3f711",
-  "rawURL" : "http://www.youtube.com/watch?v=KFriB2h03-A"
+  "rawURL" : "http://www.addtoany.com/email?linkurl=http://www.whyisrael.org/2012/10/16/to-counter-christian-anti-israelism-its-time-to-go-local/"
 }
 
 //linkInfo.comparableURLHash = urlUtils.getComparableURLHash( url );
