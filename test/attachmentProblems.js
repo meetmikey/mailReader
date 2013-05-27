@@ -19,7 +19,7 @@ var userId = 'TEST_USER';
 var cloudPath = '/rawEmail/BAD_MAIL.txt';
 cloudStorageUtils.getFile(cloudPath, true, function(err, res) {
   if ( err ) {
-    winston.doS3Error(err);
+    winston.handleError(err);
 
   } else if ( ! res ) {
     callback( winston.makeMissingParamError('res') );
