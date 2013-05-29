@@ -14,7 +14,6 @@ describe('extract body from html', function() {
       fs.readFile( filename, 'utf8', function(err, data) {
         expect( err ).toBeNull();
         body = linkHandler.extractSummaryFromHTML( data );
-        console.log (body)
       });
     });
     waitsFor( function() {
@@ -31,7 +30,6 @@ describe('extract body from html', function() {
       fs.readFile( filename, 'utf8', function(err, data) {
         expect( err ).toBeNull();
         body = linkHandler.extractSummaryFromHTML( data );
-        console.log (body)
       });
     });
     waitsFor( function() {
@@ -47,7 +45,6 @@ describe('extract body from html', function() {
       fs.readFile( filename, 'utf8', function(err, data) {
         expect( err ).toBeNull();
         body = linkHandler.extractSummaryFromHTML( data );
-        console.log ('body from stack', body)
       });
     });
     waitsFor( function() {

@@ -21,8 +21,6 @@ describe('check suspicous diffbot', function() {
       "summary" : "hello"  
     }
 
-    console.log (linkHandler.isDiffbotResponseSuspicious (bad1));
-
     expect (linkHandler.isDiffbotResponseSuspicious (bad1)).toBe (true);
     expect (linkHandler.isDiffbotResponseSuspicious (bad2)).toBe (true);
     expect (linkHandler.isDiffbotResponseSuspicious (bad3)).toBe (true);

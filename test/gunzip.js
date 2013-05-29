@@ -24,7 +24,7 @@ cloudStorageUtils.getFile( s3Path, true, function(err, res) {
     });
     res.on('end', function() {
       writeStream.end();
-      winston.info('done!');
+      winston.doInfo('done!');
     });
   }
 });

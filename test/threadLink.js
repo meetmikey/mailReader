@@ -82,7 +82,7 @@ exports.createMail = function( parsedMail, callback ) {
 
 exports.run = function() {
 
-  winston.info('running...');
+  winston.doInfo('running...');
 
   async.forEachSeries( emailFiles, function(emailFile, forEachSeriesCallback) {
     fs.readFile( emailFile, function(err, res) {
@@ -128,7 +128,7 @@ exports.cleanup = function() {
       winston.handleError(err);
     } else {
       mongoose.disconnect();
-      winston.info('cleanup done!');
+      winston.doInfo('cleanup done!');
     }
   });
 }

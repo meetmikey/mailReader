@@ -15,8 +15,6 @@ fs.readFile(filePath, function(err, data) {
     winston.doError(err);
 
   } else {
-    //console.log('data: ' + data);
-
     var headers = {
         'Content-Type': contentType
       , 'Content-Encoding': contentEncoding
@@ -29,7 +27,7 @@ fs.readFile(filePath, function(err, data) {
       if ( err ) {
         winston.handleError(err);
       } else {
-        winston.info('putBuffer successful');
+        winston.doInfo('putBuffer successful');
       }
     });
   }

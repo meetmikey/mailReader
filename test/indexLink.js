@@ -88,7 +88,7 @@ exports.createMail = function( parsedMail, callback ) {
 
 exports.run = function() {
 
-  winston.info('running...');
+  winston.doInfo('running...');
 
   // add contact info to database so that we process links
   var contact = new SentAndCoReceiveMRModel({
@@ -149,7 +149,7 @@ exports.run = function() {
 
 exports.cleanup = function() {
   return;
-  winston.info ('cleaning up')
+  winston.doInfo ('cleaning up')
   async.forEach( mailIds, function(mailId, forEachCallback) {
     LinkModel.find({mailId:mailId}).remove();
     MailModel.find({_id:mailId}).remove();
@@ -158,7 +158,7 @@ exports.cleanup = function() {
     if ( err ) {
       winston.handleError(err);
     } else {
-      winston.info('cleanup done!');
+      winston.doInfo('cleanup done!');
     }
   });
 

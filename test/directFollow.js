@@ -52,12 +52,9 @@ linkInfo = {
 linkHandler.followLinkDirectly (linkInfo, function (err, html, mimeType) {
 
   if (err) {
-    console.log (err)
-    winston.handleError (err);
+    winston.handleError(err);
   }
   else if (html) {
-    //console.log (html);
-    console.log (mimeType);
+    winston.doInfo('mimeType', {mimeType: mimeType});
   }
-
 });

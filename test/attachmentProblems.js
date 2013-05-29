@@ -37,15 +37,15 @@ cloudStorageUtils.getFile(cloudPath, true, function(err, res) {
 /*
 var path = '/home/jdurack/Desktop/badMail.txt';
 fs.readFile(path, function(err, data) {
-  //winston.info('data: ', data);
+  //winston.doInfo('data: ', {data:data});
   mailParser.write(data);
   mailParser.end();
 });
 */
 
 readMail = function(mail) {
-  //winston.info('reading mail: ', mail);
-  winston.info('got mail with subject: ' + mail.subject);
+  //winston.doInfo('reading mail: ', {mail:mail});
+  winston.doInfo('got mail with subject: ', {subject: mail.subject});
   async.forEach( mail.attachments, 
     function(mailAttachment, forEachCallback) {
       checkAttachment(mailAttachment, forEachCallback);
@@ -56,10 +56,10 @@ readMail = function(mail) {
 }
 
 checkAttachment = function(mailAttachment, callback) {
-  winston.info('got attachment: ' + mailAttachment.fileName);
+  winston.doInfo('got attachment: ', {filename: mailAttachment.fileName});
 
   //fs.writeFileSync(outputPath, mailAttachment.content);
-  //winston.info('written to disk');
+  //winston.doInfo('written to disk');
 
   var headers = {
     'Content-Type': mailAttachment.contentType,

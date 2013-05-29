@@ -15,22 +15,21 @@ var headers = {
 };
 
 var awsPath = '/rawEmail/BAD_MAIL.txt';
-console.log  ('awsPath', awsPath)
+winston.doInfo('awsPath', {awsPath: awsPath});
 
 knoxClient.putFile(filename, awsPath, headers, 
   function(err, res){
     
     if (err) {
-      console.error ('error uploading file', err)
-      console.error ('filename:', filename)
+      winston.doError('error uploading file', {err: err, filename: filename});
     }
     else{
-      console.log ('statusCode', res.statusCode)
+      winston.doInfo('statusCode', {statusCode: res.statusCode});
       if (res.statusCode !== 200) {
-        console.log ('non 200 status code', res.statusCode)
+        winston.doInfo('non 200 status code', {statusCode: statusCode});
       }
       else {
-        console.log ('uploaded to s3, add msg to queue', awsPath)
+        winston.doInfo('uploaded to s3, add msg to queue', {awsPath: awsPath});
       }
 
     }

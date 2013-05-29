@@ -36,7 +36,7 @@ appInitUtils.initApp( 'badEmailTest', initActions, null, function() {
 
 exports.run = function() {
 
-  winston.info('running...');
+  winston.doInfo('running...');
 
   badEmailTest.uploadBadFileToAzure (function (err) {
     if (err) {

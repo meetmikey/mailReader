@@ -30,8 +30,8 @@ fs.readFile(filename, function(err, data) {
 });
 
 readMail = function(mail) {
-  //winston.info('reading mail: ', mail);
-  winston.info('got mail with subject: ' + mail.subject);
+  //winston.doInfo('reading mail: ', {mail:mail});
+  winston.doInfo('got mail with subject: ', {subject: mail.subject});
   async.forEach( mail.attachments, 
     function(mailAttachment, forEachCallback) {
       checkAttachment(mailAttachment, forEachCallback);

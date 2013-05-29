@@ -5,8 +5,8 @@ var winston = require (serverCommon + '/lib/winstonWrapper').winston
   , async = require('async')
 
 //utils.handleError(utils.makeError('myError'));
-//winston.warn('warnTest',{'foo':'bar','meow':'mix'});
-//winston.info('infoTest',{'foo':'bar','meow':'mix'});
+//winston.doWarn('warnTest',{'foo':'bar','meow':'mix'});
+//winston.doInfo('infoTest',{'foo':'bar','meow':'mix'});
 
 
 var f1 = function(callback) {

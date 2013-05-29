@@ -13,7 +13,6 @@ var accessToken = 'ya29.AHES6ZQHvsyPurWX6pi5-qGqJB3cyF9eJ1cPoV_-QnZdfqA';
 var docURL = 'https://www.googleapis.com/drive/v2/files/' + googleDocId + '?access_token=' + accessToken;
 
 var directDocURL = 'https://docs.google.com/feeds/download/documents/export/Export?id=' + googleDocId + '&exportFormat=html' + '&access_token=' + accessToken;
-console.log('url: ' + directDocURL);
 
 request( directDocURL, function(err, response, html) {
   if ( err ) {
@@ -49,7 +48,6 @@ request( docURL, function(err, response, body) {
       return;
     }
 
-    //console.log('bodyJSON', bodyJSON);
     var title = bodyJSON["title"];
     winston.doInfo('title', {title: title});
 

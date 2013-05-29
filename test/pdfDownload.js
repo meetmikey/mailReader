@@ -20,7 +20,7 @@ request( url, {timeout : 10000, encoding : null}, function (error, response, bod
       if ( err ) {
         winston.doError(err);
       }
-      winston.info('done!');
+      winston.doInfo('done!');
     });
   }
 });

@@ -34,8 +34,7 @@ appInitUtils.initApp( 'badEmail', initActions, null, function() {
 
 
   mailParser.on ('end', function () {
-    console.log ('mailParser done')
-    
+    winston.doInfo('mailParser done');
   })
 
   fs.readFile( path, function(err, data) {
