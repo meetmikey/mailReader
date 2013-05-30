@@ -28,3 +28,5 @@ define ('MAX_URL_LENGTH', 400);
 define ('MAX_TRIES_MAILREADER', 8);
 
 define ('RECIPIENT_BLACKLIST', ['no-reply@coursework.stanford.edu', 'no-reply@coursework.edu']);
+
+define ('ERROR_TYPE_HARD_FAIL', 'hardFail');
