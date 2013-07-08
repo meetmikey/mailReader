@@ -1,72 +1,227 @@
-Delivered-To: pablo@diazgutierrez.com
-Received: by 10.68.237.130 with SMTP id vc2csp15798pbc;
-        Mon, 19 Mar 2012 07:27:55 -0700 (PDT)
-Received: by 10.68.135.99 with SMTP id pr3mr40650367pbb.52.1332167275381;
-        Mon, 19 Mar 2012 07:27:55 -0700 (PDT)
-Return-Path: <>
-Received: from confermail.ntu.edu.sg (confermail.ntu.edu.sg. [155.69.5.218])
-        by mx.google.com with ESMTP id q7si11537271pbf.13.2012.03.19.07.27.54;
-        Mon, 19 Mar 2012 07:27:55 -0700 (PDT)
-Received-SPF: pass (google.com: best guess record for domain of confermail.ntu.edu.sg designates 155.69.5.218 as permitted sender) client-ip=155.69.5.218;
-Authentication-Results: mx.google.com; spf=pass (google.com: best guess record for domain of confermail.ntu.edu.sg designates 155.69.5.218 as permitted sender) smtp.mail=
-Received: from listserv ([155.69.5.31]) by confermail.ntu.edu.sg with Microsoft SMTPSVC(5.0.2195.7381);
-	 Mon, 19 Mar 2012 22:27:53 +0800
-Date:         Mon, 19 Mar 2012 22:27:53 +0800
-From:         "Nanyang Technological University LISTSERV Server (14.4)" <LISTSERV@MLIST.NTU.EDU.SG>
-Subject: Invalid request received from you
-To:           pablo@DIAZGUTIERREZ.COM
-Message-ID:   <LISTSERV%201203192227536750.5ABC@MLIST.NTU.EDU.SG>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX"
-Return-Path: <>
-X-OriginalArrivalTime: 19 Mar 2012 14:27:53.0902 (UTC) FILETIME=[78AADCE0:01CD05DC]
-
---ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX
-
-Your message is being returned to you unprocessed because no command was found
-in the  message body.  LISTSERV expects  commands in the  body of  the message
-rather than in the message subject because some users have no control over the
-contents of the "Subject:" field on outgoing messages.
-
---ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX
-Content-Type: message/rfc822
-
-Return-Path: <pablo@diazgutierrez.com>
-Received: from 209.85.210.46 by MLIST.NTU.EDU.SG (SMTPL release 1.0m) with TCP; Mon, 19 Mar 2012 22:27:53 +0800
-Received: by dajr28 with SMTP id r28so9976428daj.19
-        for <LISTSERV@mlist.ntu.edu.sg>; Mon, 19 Mar 2012 07:27:52 -0700 (PDT)
+Delivered-To: djrosent@zm88.stanford.edu
+Received: by 10.216.165.134 with SMTP id e6csp52334wel;
+        Thu, 23 May 2013 17:03:50 -0700 (PDT)
+X-Received: by 10.68.197.66 with SMTP id is2mr15142799pbc.175.1369353811616;
+        Thu, 23 May 2013 17:03:31 -0700 (PDT)
+Return-Path: <gsb_blast-2014-bounces@mailman.stanford.edu>
+Received: from smtp.stanford.edu (smtp1.Stanford.EDU. [171.67.219.81])
+        by mx.google.com with ESMTPS id lb5si10581184pbc.90.2013.05.23.17.03.30
+        for <multiple recipients>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Thu, 23 May 2013 17:03:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of gsb_blast-2014-bounces@mailman.stanford.edu designates 171.67.219.81 as permitted sender) client-ip=171.67.219.81;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of gsb_blast-2014-bounces@mailman.stanford.edu designates 171.67.219.81 as permitted sender) smtp.mail=gsb_blast-2014-bounces@mailman.stanford.edu
+Received: from smtp.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 20FAF14172D;
+	Thu, 23 May 2013 17:03:30 -0700 (PDT)
+Received: from mailman.stanford.edu (mailman.Stanford.EDU [171.67.216.245])
+	by smtp.stanford.edu (Postfix) with ESMTP id DCE1314171F;
+	Thu, 23 May 2013 17:03:23 -0700 (PDT)
+X-Original-To: gsb_blast-2014@mailman.stanford.edu
+Delivered-To: gsb_blast-2014@mailman.stanford.edu
+Received: from mailman.stanford.edu (localhost.localdomain [127.0.0.1])
+	by mailman.stanford.edu (Postfix) with SMTP id 2553F2007A3;
+	Thu, 23 May 2013 17:03:22 -0700 (PDT)
+Received: from smtp.stanford.edu (smtp1.Stanford.EDU [171.67.219.81])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailman.stanford.edu (Postfix) with ESMTPS id 04A9E200971;
+	Thu, 23 May 2013 17:03:22 -0700 (PDT)
+Received: from localhost.localdomain (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with ESMTP id E50FB141729;
+	Thu, 23 May 2013 17:03:21 -0700 (PDT)
+Received: from smtp1.stanford.edu
+	by smtp1.stanford.edu with queue id 5123011-14;
+	Fri, 24 May 2013 00:03:21 GMT
+Received: from mailman.stanford.edu (mailman.Stanford.EDU [171.67.216.245])
+	by smtp.stanford.edu (Postfix) with ESMTP id 975FC1416A5;
+	Thu, 23 May 2013 17:03:21 -0700 (PDT)
+X-Original-To: gsb-blast-all@mailman.stanford.edu
+Delivered-To: gsb-blast-all@mailman.stanford.edu
+Received: from mailman.stanford.edu (localhost.localdomain [127.0.0.1])
+	by mailman.stanford.edu (Postfix) with SMTP id 6D2E52007BA
+	for <gsb-blast-all@mailman.stanford.edu>;
+	Thu, 23 May 2013 17:03:20 -0700 (PDT)
+Received: from smtp.stanford.edu (smtp3.Stanford.EDU [171.67.219.83])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailman.stanford.edu (Postfix) with ESMTPS id 507992007A3
+	for <gsb-blast-all@mailman.stanford.edu>;
+	Thu, 23 May 2013 17:03:20 -0700 (PDT)
+Received: from smtp.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id 384DF45F354
+	for <gsb-blast-all@mailman.stanford.edu>;
+	Thu, 23 May 2013 17:03:20 -0700 (PDT)
+Received: from mail-ie0-f182.google.com (mail-ie0-f182.google.com
+	[209.85.223.182]) (using TLSv1 with cipher RC4-SHA (128/128 bits))
+	(No client certificate requested)
+	by smtp.stanford.edu (Postfix) with ESMTPS id EA2ED45F33F
+	for <gsb-blast-all@lists.stanford.edu>;
+	Thu, 23 May 2013 17:03:19 -0700 (PDT)
+Received: by mail-ie0-f182.google.com with SMTP id a14sf10600532iee.27
+	for <gsb-blast-all@lists.stanford.edu>;
+	Thu, 23 May 2013 17:03:19 -0700 (PDT)
 X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=google.com; s=20120113;
-        h=content-type:mime-version:subject:from:in-reply-to:date
-         :content-transfer-encoding:message-id:references:to:x-mailer
-         :x-gm-message-state;
-        bh=47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=;
-        b=j51L9PV0X0vQyLtU8S9hj+RIih57U6c8j/pC6GzbNgqhEiw2c+wVTkeLDmYna8GLn+
-         dv2FWRB9x0SPNBhkCMSVB+GiLXjsDUwbuusVx3dJiSx/AicvL5WkRFvYmzDz/5ouWVjM
-         v/BSokaPYwJF5Q5jHQXb/A/noYJuO/8XQMaEZKJiuAqMqGp6yMqG+BIi5RQ/5YCVv3H+
-         /bpfDR3tIdize5jbKjAmAfuXCkuKhCU/V0RgTYEGGLxnYv5scqGgVwr12fijCqYYTBAd
-         o5CulQsF+hqgPRslkWcqGBahjP71GmmOVsJqges3NSwwwexysJvpFrNjc/EMkofRpUVe
-         tAbg==
-Received: by 10.68.230.229 with SMTP id tb5mr41600362pbc.0.1332167272715;
-        Mon, 19 Mar 2012 07:27:52 -0700 (PDT)
-Return-Path: <pablo@diazgutierrez.com>
-Received: from [192.168.0.101] ([208.80.69.76])
-        by mx.google.com with ESMTPS id m1sm4019728pbl.39.2012.03.19.07.27.52
-        (version=SSLv3 cipher=OTHER);
-        Mon, 19 Mar 2012 07:27:52 -0700 (PDT)
-Content-Type: text/plain; charset=us-ascii
-Mime-Version: 1.0 (Apple Message framework v1257)
-Subject: SIGNOFF CASA_2012
-From: Pablo Diaz-Gutierrez <pablo@diazgutierrez.com>
-In-Reply-To: <LISTSERV%201203192227155350.5ABB@MLIST.NTU.EDU.SG>
-Date: Mon, 19 Mar 2012 07:27:58 -0700
+	d=google.com; s=20120113;
+	h=x-beenthere:mime-version:reply-to:from:date:message-id:subject:to
+	:cc:x-original-sender:x-original-authentication-results:precedence
+	:mailing-list:list-id:x-google-group-id:list-post:list-help
+	:list-archive:list-unsubscribe:content-type:x-gm-message-state;
+	bh=5tMgFkZIN6fyHDhRPJhbDaWKbIqJomE55t5CW4JqrQQ=;
+	b=OafFV4FQZGUtO9sevaVN3hz7tDsexTDJcgzbChxCqj1brUioC1bDRFKYamrVDJS89O
+	w+Wdef+FViv7+I95SOwk1H+4wotFT5QFJiU5znKKS0Uns5xo+yEdR40YhzwuOB2eEvnz
+	1NZLrqYaeFnlXqbcj8dAdl4z7ClxP4QNCM05JsfUnEm5UxV4ZSg29A7/epQdGzpo06C5
+	J6Cs8qiDaEYzNOfYjVaFQLwnwYLE4jX1JV0d6QISDP9pUSSvBA3AtYb2aPIJ3e4M7cf0
+	xhwOVcsJ79LUHvljlGA5mRWdGpNUsnz4pY3AgW5DFrDoHVXRCMzCjgekjOG2+CjID4e1
+	PU7Q==
+X-Received: by 10.42.56.198 with SMTP id a6mr10896622ich.26.1369353799427;
+	Thu, 23 May 2013 17:03:19 -0700 (PDT)
+X-Received: by 10.42.56.198 with SMTP id a6mr10896621ich.26.1369353799406;
+	Thu, 23 May 2013 17:03:19 -0700 (PDT)
+X-BeenThere: gsb_blast-all@stanford.edu
+Received: by 10.50.176.134 with SMTP id ci6ls78880igc.27.canary; Thu, 23 May
+	2013 17:03:19 -0700 (PDT)
+X-Received: by 10.68.189.105 with SMTP id gh9mr15181511pbc.77.1369353799196;
+	Thu, 23 May 2013 17:03:19 -0700 (PDT)
+Received: from smtp.stanford.edu (smtp3.Stanford.EDU. [171.67.219.83])
+	by mx.google.com with ESMTPS id pw6si4078390pac.298.2013.05.23.17.03.19
+	for <gsb_blast-all@zm88.stanford.edu>
+	(version=TLSv1 cipher=RC4-SHA bits=128/128);
+	Thu, 23 May 2013 17:03:19 -0700 (PDT)
+Received-SPF: pass (google.com: domain of viveksa@stanford.edu designates
+	171.67.219.83 as permitted sender) client-ip=171.67.219.83; 
+Received: from smtp.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id C58F345F2BD
+	for <gsb_blast-all@zm88.stanford.edu>;
+	Thu, 23 May 2013 17:03:18 -0700 (PDT)
+Received: from mail-ie0-f178.google.com (mail-ie0-f178.google.com
+	[209.85.223.178]) (using TLSv1 with cipher RC4-SHA (128/128 bits))
+	(No client certificate requested)
+	by smtp.stanford.edu (Postfix) with ESMTPS id 8951D45F32F
+	for <GSB_Blast-All@stanford.edu>; Thu, 23 May 2013 17:03:18 -0700 (PDT)
+Received: by mail-ie0-f178.google.com with SMTP id f4so2990474iea.23
+	for <GSB_Blast-All@stanford.edu>; Thu, 23 May 2013 17:03:18 -0700 (PDT)
+X-Received: by 10.50.112.166 with SMTP id ir6mr8770243igb.58.1369353798032;
+	Thu, 23 May 2013 17:03:18 -0700 (PDT)
+X-Received: by 10.50.112.166 with SMTP id ir6mr8770240igb.58.1369353797934;
+	Thu, 23 May 2013 17:03:17 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.64.50.201 with HTTP; Thu, 23 May 2013 17:02:57 -0700 (PDT)
+From: Vivek Saraswat <Vivek.Saraswat@GSB.Stanford.Edu>
+Date: Thu, 23 May 2013 17:02:57 -0700
+Message-ID: <CAKXTOhniw5BpBwZw_9Hu=XUmuxESpx_0fa8yt4MWhcmLOrNHRg@mail.gmail.com>
+To: GSB-Blast-All <GSB_Blast-All@stanford.edu>
+X-Original-Sender: vivek.saraswat@gsb.stanford.edu
+X-Original-Authentication-Results: mx.google.com; spf=pass (google.com:
+	domain of viveksa@stanford.edu designates
+	171.67.219.83 as permitted sender)
+	smtp.mail=viveksa@stanford.edu
+Precedence: list
+Mailing-list: list GSB_Blast-All@stanford.edu;
+	contact GSB_Blast-All+owners@stanford.edu
+X-Google-Group-Id: 130069769214
+List-Archive: <http://groups.google.com/a/stanford.edu/group/GSB_Blast-All/?hl=en_US>
+X-Gm-Message-State: ALoCoQmL7LEHGjEGDdkJQetsfCGuBDPGvf3SnUWtD/QfWiNW34rGvS/EgGYD3cCqK74vYIInoLdiyOPxHKPFy3mvprDUGJR2ehR/dN2WR7NN+wt7rS4jW2Qaipd2T0J3KgwGCtbqrzVukpeItCPnJFD97yT2sXslLU7gTZZ7Sysgba2Og+NQqD5Q+3al8FM7YqNv9VyCHUlD
+X-BeenThere: gsb-blast-all@lists.stanford.edu
+X-Mailman-Version: 2.1.13
+Cc: Jeff Zhu <jeffzhu@wharton.upenn.edu>
+Subject: [blastmsg] Friend looking for a PA/MP sublet
+X-BeenThere: gsb_blast-2014@lists.stanford.edu
+Reply-To: Vivek.Saraswat@GSB.Stanford.Edu
+List-Id: Class of 2014 MBA student opt-in chatlist
+	<gsb_blast-2014.lists.stanford.edu>
+List-Unsubscribe: <https://mailman.stanford.edu/mailman/options/gsb_blast-2014>, 
+	<mailto:gsb_blast-2014-request@lists.stanford.edu?subject=unsubscribe>
+List-Post: <mailto:gsb_blast-2014@lists.stanford.edu>
+List-Help: <mailto:gsb_blast-2014-request@lists.stanford.edu?subject=help>
+List-Subscribe: <https://mailman.stanford.edu/mailman/listinfo/gsb_blast-2014>, 
+	<mailto:gsb_blast-2014-request@lists.stanford.edu?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============0950665448865220553=="
+Sender: gsb_blast-2014-bounces@lists.stanford.edu
+Errors-To: gsb_blast-2014-bounces@lists.stanford.edu
+
+--===============0950665448865220553==
+Content-Type: multipart/alternative; boundary=089e013c6cfab2af5d04dd6b8614
+
+--089e013c6cfab2af5d04dd6b8614
+Content-Type: text/plain; charset=ISO-8859-1
+
+Hi Blast,
+
+A friend from Wharton, Jeff Zhu (CCed), is working in Menlo Park this
+summer and is looking for a sublet in the surrounding area (Menlo Park,
+Palo Alto, Atherton, etc.). He is looking to move starting 6/15 through the
+end of August and is pretty flexible about the type of place (room in an
+house/apt or a 1BR apartment/studio). If you have any vacancy you can email
+him (jeffzhu@wharton.upenn.edu).
+
+Thanks!
+Vivek
+
+BT: Wharton Follies 2010 - "Recruiting
+Paradise"<http://www.youtube.com/watch?v=CROJCXUcztc>
+
+-- 
+Vivek Saraswat
+Stanford Graduate School of Business
+MBA Candidate Class of 2014
+viveksa@gsb.stanford.edu | 408-386-3867
+
+--089e013c6cfab2af5d04dd6b8614
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Blast,<div><br></div><div>A friend from Wharton, Jeff Z=
+hu (CCed), is working in Menlo Park this summer and is looking for a sublet=
+ in the surrounding area (Menlo Park, Palo Alto, Atherton, etc.). He is loo=
+king to move starting 6/15 through the end of August and is pretty flexible=
+ about the type of place (room in an house/apt or a 1BR apartment/studio). =
+If you have any vacancy you can email him (<span style=3D"color:rgb(85,85,8=
+5);font-family:arial,sans-serif;font-size:13px;white-space:nowrap"><a href=
+=3D"mailto:jeffzhu@wharton.upenn.edu">jeffzhu@wharton.upenn.edu</a>).</span=
+></div>
+
+<div><font color=3D"#555555" face=3D"arial, sans-serif"><span style=3D"whit=
+e-space:nowrap"><br></span></font></div><div><font color=3D"#555555" face=
+=3D"arial, sans-serif"><span style=3D"white-space:nowrap">Thanks!</span></f=
+ont></div>
+
+<div><font color=3D"#555555" face=3D"arial, sans-serif"><span style=3D"whit=
+e-space:nowrap">Vivek<br clear=3D"all"></span></font><div><br></div><div>BT=
+: <a href=3D"http://www.youtube.com/watch?v=3DCROJCXUcztc">Wharton Follies =
+2010 - &quot;Recruiting Paradise&quot;</a></div>
+
+<div><br></div>-- <br><div><span style=3D"background-color:rgb(255,255,255)=
+;font-family:arial,sans-serif;font-size:13px">Vivek Saraswat</span></div><f=
+ont color=3D"#cc0000" style=3D"font-family:arial,sans-serif;font-size:13px;=
+background-color:rgb(255,255,255)">Stanford Graduate School of Business</fo=
+nt><div style=3D"color:rgb(136,136,136);font-family:arial,sans-serif;font-s=
+ize:13px;background-color:rgb(255,255,255)">
+
+<font color=3D"#666666">MBA Candidate Class of 2014</font><br><a href=3D"ma=
+ilto:viveksa@gsb.stanford.edu" style=3D"color:rgb(17,85,204)" target=3D"_bl=
+ank">viveksa@gsb.stanford.edu</a>=A0|=A0<a value=3D"+15102821144" style=3D"=
+color:rgb(17,85,204)">408-386-3867</a></div>
+
+
+</div></div>
+
+--089e013c6cfab2af5d04dd6b8614--
+
+--===============0950665448865220553==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
-Message-Id: <ADCF0DB2-96A7-4F1B-B288-5DBFF849D2C1@DIAZGUTIERREZ.COM>
-References: <LISTSERV%201203192227155350.5ABB@MLIST.NTU.EDU.SG>
-To: "Nanyang Technological University LISTSERV Server (14.4)" <LISTSERV@MLIST.NTU.EDU.SG>
-X-Mailer: Apple Mail (2.1257)
-X-Gm-Message-State: ALoCoQm1A0rsMRx58/3/5sNbnaiALck1S/frnQr1uEKOaR5F8W+Dfm7G06V5To7Z3EH3fh+jSYiI
+Content-Disposition: inline
 
+_______________________________________________
+Passdown Houses -- http://goo.gl/zckqK
+Airport Ride Sharing -- http://goo.gl/2FPSJ
+Textbook Exchange -- http://tinyurl.com/gsbooks2012
+IPO (Invite a Professor Out) -- http://tinyurl.com/inviteprof
+GSBers Selling Stuff -- http://tinyurl.com/gsbsale
 
-
---ZVdKeADCJcMEBMIQeSWPZHIUYVTRTX--
+gsb_blast-2014@lists.stanford.edu
+https://mailman.stanford.edu/mailman/listinfo/gsb_blast-2014
+--===============0950665448865220553==--

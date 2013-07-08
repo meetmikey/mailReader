@@ -21,9 +21,47 @@ var sender = {
   , email: 'alexrives@gmail.com'
 }
 
+var mailObj = {
+  "_id" : "51da3311fab1e608e805ab40",
+  "bodyInS3" : true,
+  "cleanSubject" : "Estimate from Cherish Paperie Darlene Muessig",
+  "gmDate" : "2012-07-24T05:30:28Z",
+  "gmLabels" : [
+    "\\Important",
+    "estimates &- inquiries"
+  ],
+  "gmMsgId" : "1408350634284823063",
+  "gmThreadId" : "1408321545939061105",
+  "linkExtractorState" : "done",
+  "mailReaderState" : "done",
+  "mailboxId" : "51d8aa77fab1e608e800096a",
+  "messageId" : "<19ee01ce7811$7a420fd0$6ec62f70$@cherishpaperie.com>",
+  "mmDone" : true,
+  "numAttachments" : 0,
+  "recipients" : [
+    {
+      "name" : "'Darlene Muessig'",
+      "email" : "darlenemuessig@hotmail.com"
+    }
+  ],
+  "s3Path" : "rawEmail/51d8aa5b4ef29d2a6b000230/54761-body.txt",
+  "sender" : {
+    "name" : "Chris Coerper",
+    "email" : "chris@cherishpaperie.com"
+  },
+  "sentDate" : "2012-07-24T05:30:28Z",
+  "seqNo" : 54638,
+  "size" : 3070,
+  "subject" : "RE: Estimate from Cherish Paperie Darlene Muessig",
+  "tries" : 2,
+  "uid" : 54761,
+  "userId" : "51d8aa5b4ef29d2a6b000230"
+}
+
+
 var recipients = []
 
-var dataFilePath = './test/data/onion.txt'
+var dataFilePath = './test/data/myfile'
 
 var initActions = [
   appInitUtils.CONNECT_MONGO
@@ -103,6 +141,7 @@ exports.setupDatabase = function (callback) {
       , gmThreadId : '1908308240'
       , sender: sender
       , recipients : recipients
+      , gmDate : "2012-07-24T05:30:28Z",
     });
 
     mail.save (function (err) {
