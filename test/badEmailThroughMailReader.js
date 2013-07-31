@@ -12,7 +12,7 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect')
 
 
 var badEmailTest = this;
-var azurePath = "rawEmail/516feea3a42ae2f994000017/2643173-body.txt";
+var azurePath = "rawEmail/516feea3a42ae2f994000017/516feea3a42ae2f994000017.txt";
 var userId = "5181b78bade2190015000009";
 var mailId = "516feea3a42ae2f994000017";
 var emailAddress = 'justin@mikeyteam.com';
@@ -61,7 +61,8 @@ var mailObj = {
 
 var recipients = []
 
-var dataFilePath = './test/data/myfile'
+var dataFilePath = './test/data/badAWS.txt'
+//var dataFilePath = './test/data/goodEmail.txt'
 
 var initActions = [
   appInitUtils.CONNECT_MONGO
