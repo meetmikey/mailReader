@@ -10,10 +10,11 @@ var appInitUtils = require(serverCommon + '/lib/appInitUtils')
 var initActions = [
     appInitUtils.CONNECT_ELASTIC_SEARCH
   , appInitUtils.CONNECT_MONGO
+  , appInitUtils.RESTART_EMAIL
   //, appInitUtils.MEMWATCH_MONITOR
 ];
 
-serverCommonConf.turnDebugModeOn()
+//serverCommonConf.turnDebugModeOn()
 
 //initApp() will not callback an error.
 //If something fails, it will just exit the process.
