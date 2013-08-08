@@ -24,8 +24,15 @@ appInitUtils.initApp( 'badEmail', initActions, null, function() {
   var path = './data/bad2.txt';
   
   //path = './data/googleDocLinkMail.txt';
+  var message = {
+    userId = '5146b7cfc8ac0fa028000005',
+    rawMailCloudPath = 'somePath',
+    mailId = '51476bbd64d9e02e2500001f',
+    inAzure : true,
+    isQuick : true
+  }
    
-  var mailParser = mailReader.getNewMailParser( mailId, userId
+  var mailParser = mailReader.getNewMailParser( message, mailId, userId
    , function(err){
    winston.handleError(err);
   }, function(err) {
