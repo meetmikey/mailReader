@@ -24,10 +24,16 @@ appInitUtils.initApp( 'bigAttachment', initActions, null, function() {
   var path = './data/mailParserBadEmail.txt';
   var outputPathStream = '/home/jdurack/Desktop/streamOut.pdf';
   var outputPath = '/home/jdurack/Desktop/regularOut.pdf';
-  
+  var message = {
+    userId = 'someId',
+    rawMailCloudPath = 'somePath',
+    mailId = 'someMailId',
+    inAzure : true,
+    isQuick : true
+  }
   //path = './data/googleDocLinkMail.txt';
    
-  var mailParser = mailReader.getNewMailParser( mailId, userId
+  var mailParser = mailReader.getNewMailParser( message, mailId, userId
    , function(err){
    winston.handleError(err);
   }, function(err) {

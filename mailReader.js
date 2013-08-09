@@ -29,7 +29,8 @@ appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
 
   sqsConnect.pollMailReaderQueue(
     function(messageString, callback) {
-      mailReader.handleMailMessage( messageString, function(err) {
+      var isQuick = false;
+      mailReader.handleMailMessage( isQuick, messageString, function(err) {
         if (err) {
           winston.handleError(err);
           callback(err);
@@ -42,7 +43,8 @@ appInitUtils.initApp( 'mailReader', initActions, serverCommonConf, function() {
 
   sqsConnect.pollMailReaderQuickQueue(
     function(messageString, callback) {
-      mailReader.handleMailMessage( messageString, function(err) {
+      var isQuick = true;
+      mailReader.handleMailMessage( isQuick, messageString, function(err) {
         if (err) {
           winston.handleError(err);
           callback(err);
