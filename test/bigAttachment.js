@@ -48,7 +48,7 @@ appInitUtils.initApp( 'bigAttachment', initActions, null, function() {
 
   mailParser.on("attachment", function(attachment){
 
-    utils.streamToBuffer( attachment.stream, function(err, attachmentBuffer ) {
+    utils.streamToBuffer( attachment.stream, false, function(err, attachmentBuffer ) {
       fs.writeFileSync( outputPathStream, attachmentBuffer );
     });
   });
