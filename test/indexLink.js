@@ -93,8 +93,8 @@ exports.run = function() {
   // add contact info to database so that we process links
   var contact = new SentAndCoReceiveMRModel({
     _id : {
-        userId : userId
-      , email : fromEmail
+        email : fromEmail
+      , userId : userId
     },
     value : {
       sent : 1,
