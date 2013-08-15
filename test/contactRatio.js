@@ -6,7 +6,6 @@ var mongoose = require(serverCommon + '/lib/mongooseConnect').mongoose
   , async = require('async')
   , winston = require(serverCommon + '/lib/winstonWrapper').winston
   , contactUtils = require(serverCommon + '/lib/contactUtils')
-  , ReceiveMRModel = require(serverCommon + '/schema/contact').ReceiveMRModel
   , fs = require('fs')
 
 
