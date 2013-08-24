@@ -6,6 +6,7 @@ var MailParser = require('mailparser').MailParser
   , async = require('async')
   , mailUtils = require(serverCommon + '/lib/mailUtils')
   , cloudStorageUtils = require(serverCommon + '/lib/cloudStorageUtils')
+  , attachmentHandler = require('../lib/attachmentHandler')
   , AttachmentModel = require(serverCommon + '/schema/attachment').AttachmentModel
 
 var mailParser = new MailParser();
@@ -13,7 +14,7 @@ mailParser.on('end', function(mail) {
   readMail(mail);
 });
 
-var filename = './test/data/calendarInvite.txt';
+var filename = './test/data/calendarInvite2.txt';
 var userId = 'TEST_USER';
 
 fs.readFile(filename, function(err, data) {
@@ -44,6 +45,8 @@ readMail = function(mail) {
 checkAttachment = function(mailAttachment, callback) {
   if ( mailAttachment && mailAttachment.fileName ) {
     winston.doInfo('got attachment: ' + mailAttachment.fileName);
+    var isPromotable = attachmentHandler.isPromotable( mailAttachment );
+    winston.doInfo('isPromotable?', {isPromotable: isPromotable});
 
   } else {
     delete( mailAttachment.content );
