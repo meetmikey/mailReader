@@ -8,8 +8,7 @@ var appInitUtils = require(serverCommon + '/lib/appInitUtils')
   , mailReaderConstants = require('./constants')
 
 var initActions = [
-    appInitUtils.CONNECT_ELASTIC_SEARCH
-  , appInitUtils.CONNECT_MONGO
+  appInitUtils.CONNECT_MONGO
   , appInitUtils.RESTART_EMAIL
   //, appInitUtils.MEMWATCH_MONITOR
 ];
