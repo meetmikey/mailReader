@@ -9,7 +9,7 @@ var appInitUtils = require(serverCommon + '/lib/appInitUtils')
 
 var initActions = [
   appInitUtils.CONNECT_MONGO
-  , appInitUtils.RESTART_EMAIL
+  //, appInitUtils.RESTART_EMAIL
   //, appInitUtils.MEMWATCH_MONITOR
 ];
 
